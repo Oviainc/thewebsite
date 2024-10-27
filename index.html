@@ -12,6 +12,10 @@
             margin: 0; 
             padding: 0; 
             text-align: center; /* Center all text in the body */
+            display: flex; /* Use flexbox for centering */
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Center vertically */
+            min-height: 100vh; /* Full height */
         }
         header, footer { 
             background-color: #f0f0f0; 
@@ -19,12 +23,12 @@
         }
         h1, h2 { 
             color: black; 
+            margin: 20px 0; /* Add margin for spacing */
         }
         ul { 
             list-style-type: none; 
             padding: 0; 
-            display: inline-block; /* Center the list */
-            text-align: left; /* Keep text in lists left-aligned */
+            text-align: center; /* Center the list */
         }
         li { 
             margin: 10px 0; 
@@ -57,7 +61,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to OVIA: A Studio Lab Dedicated to Excellence</h1>
+        <h1>OVIA: A Studio Lab Dedicated to Excellence</h1>
         <p>Creating tailored, exclusive content and technology.</p>
     </header>
 
