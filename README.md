@@ -35,7 +35,7 @@ OVIA specializes in the following high-demand areas:
 
 ## Getting Started 🚀
 
-To view the OVIA website, simply visit [yourusername.github.io](https://yourusername.github.io/). 
+To view the OVIA website, simply visit [[[yourusername.github.io]]](https://oviainc.github.io/thewebsite/)
 
 ### Requirements
 
@@ -51,7 +51,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact 📧
 
-For inquiries, please reach out via email at [youremail@example.com](mailto:youremail@example.com).
+For inquiries, please reach out 
 
 ---
 
