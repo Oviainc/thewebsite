@@ -10,34 +10,46 @@
     <style>
         body { 
             font-family: 'Inter', sans-serif; 
-            color: black; 
-            background-color: white; 
+            color: #333; /* Dark gray for better readability */
+            background-color: #f9f9f9; /* Light background for contrast */
             margin: 0; 
             padding: 0; 
             text-align: center; 
             display: flex; 
             flex-direction: column; 
             justify-content: center; 
+            align-items: center; /* Center content horizontally */
             min-height: 100vh; 
             line-height: 1.6; /* Improved line height for readability */
         }
         header, footer { 
-            background-color: #f0f0f0; 
+            background-color: #ffffff; /* White background for header/footer */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             padding: 20px; 
+            width: 100%; /* Full width for header/footer */
+            max-width: 800px; /* Limit width for better readability */
+            margin: 20px 0; /* Spacing around header/footer */
+            border-radius: 8px; /* Rounded corners */
         }
         h1, h2 { 
-            color: black; 
-            margin: 20px 0; 
+            color: #222; /* Slightly darker for headings */
+            margin: 15px 0; 
             font-weight: 600; /* Emphasize headings */
         }
         ul { 
             list-style-type: none; 
             padding: 0; 
-            text-align: center; 
+            text-align: left; /* Align text to the left for better readability */
             display: inline-block; 
+            margin: 0; /* Reset margin */
         }
         li { 
             margin: 10px 0; 
+            padding: 5px; /* Add padding for touch targets */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+        li:hover {
+            background-color: #f0f0f0; /* Light gray on hover */
         }
         form { 
             margin-top: 20px; 
@@ -45,6 +57,7 @@
         label { 
             display: block; 
             margin-bottom: 5px; 
+            font-weight: 600; /* Bold for labels */
         }
         input[type="email"] { 
             padding: 10px; 
@@ -52,14 +65,17 @@
             max-width: 300px; 
             margin-bottom: 10px; 
             border: 1px solid #ccc; 
+            border-radius: 4px; /* Rounded corners */
         }
         button { 
             padding: 10px 20px; 
             background-color: black; 
             color: white; 
             border: none; 
+            border-radius: 4px; /* Rounded corners */
             cursor: pointer; 
             font-weight: 400; /* Regular weight for buttons */
+            transition: background-color 0.3s; /* Smooth transition on hover */
         }
         button:hover { 
             background-color: gray; 
