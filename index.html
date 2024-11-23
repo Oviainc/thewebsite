@@ -1,219 +1,274 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="OVIA Studio Lab - Dedicated to excellence in content creation and technology.">
-        <meta name="keywords" content="OVIA, Studio Lab, Technology, AI, Web Development, Data Science">
-        <title>OVIA Studio Lab</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <style>
-            body { 
-                font-family: 'Inter', sans-serif; 
-                color: #333; 
-                background-color: #f9f9f9; 
-                margin: 0; 
-                padding: 0; 
-                text-align: center; 
-                display: flex; 
-                flex-direction: column; 
-                justify-content: center; 
-                align-items: center; 
-                min-height: 100vh; 
-                line-height: 1.6; 
-            }
-            header, footer { 
-                background-color: #ffffff; 
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-                padding: 20px; 
-                width: 100%; 
-                max-width: 800px; 
-                margin: 20px 0; 
-                border-radius: 8px; 
-            }
-            h1, h2 { 
-                color: #222; 
-                margin: 15px 0; 
-                font-weight: 600; 
-            }
-            ul { 
-                list-style-type: none; 
-                padding: 0; 
-                text-align: center; /* Centering the list items */
-                margin: 0;
-                display: inline-block;
-            }
-            li { 
-                position: relative;
-                margin: 10px 0; 
-                padding: 10px 20px;
-                transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
-                border-radius: 8px;
-                cursor: pointer;
-                color: #000; /* Black text by default */
-            }
-            li:hover {
-                background-color: #000; /* Black background on hover */
-                color: #fff; /* White text on hover */
-                transform: scale(1.05);
-            }
-            li .details {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 100%; /* Position to the right of the list item */
-                margin-left: 10px; /* Space between the item and details */
-                background-color: #fff;
-                padding: 10px;
-                border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                width: 200px;
-                font-size: 14px;
-                z-index: 1;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-                color: #000; /* Ensure text inside the popup is black */
-            }
-            li:hover .details {
-                display: block;
-                opacity: 1;
-            }
-            footer h2 {
-                margin: 20px 0 10px;
-            }
-            iframe {
-                max-width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>OVIA: A Studio Lab Dedicated to Excellence</h1>
-            <p>Creating tailored, exclusive content and technology.</p>
-        </header>
-    
-        <main>
-            <section>
-                <h2>Core Values</h2>
-                <ul>
-                    <li>
-                        <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
-                        <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
-                    </li>
-                    <li>
-                        <strong>Valentia (Valor):</strong> Committed to quality and artistry.
-                        <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
-                    </li>
-                    <li>
-                        <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
-                        <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
-                    </li>
-                    <li>
-                        <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
-                        <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
-                    </li>
-                </ul>
-    
-                <h2>Specialties</h2>
-                <ul>
-                    <li>
-                        Machine Learning Engineering
-                        <div class="details">Building intelligent systems that learn and adapt over time.</div>
-                    </li>
-                    <li>
-                        Artificial Intelligence
-                        <div class="details">Leveraging AI to create innovative solutions for complex challenges.</div>
-                    </li>
-                    <li>
-                        Data Science
-                        <div class="details">Extracting valuable insights from data to guide decision-making.</div>
-                    </li>
-                    <li>
-                        Cloud Computing
-                        <div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div>
-                    </li>
-                    <li>
-                        Cybersecurity
-                        <div class="details">Protecting your digital assets with advanced security technologies.</div>
-                    </li>
-                    <li>
-                        Digital Marketing
-                        <div class="details">Enhancing brand visibility through data-driven marketing strategies.</div>
-                    </li>
-                    <li>
-                        Blockchain Technology
-                        <div class="details">Creating secure, decentralized systems for data and transactions.</div>
-                    </li>
-                    <li>
-                        User Experience (UX) Design
-                        <div class="details">Designing user-centered interfaces for optimal experiences.</div>
-                    </li>
-                    <li>
-                        User Interface (UI) Design
-                        <div class="details">Crafting intuitive, visually appealing interfaces.</div>
-                    </li>
-                    <li>
-                        Product Design
-                        <div class="details">Developing products that balance form, function, and innovation.</div>
-                    </li>
-                    <li>
-                        Web Development
-                        <div class="details">Building responsive and dynamic websites tailored to user needs.</div>
-                    </li>
-                    <li>
-                        Augmented Reality (AR) Development
-                        <div class="details">Creating immersive experiences that blend the physical and digital worlds.</div>
-                    </li>
-                    <li>
-                        Virtual Reality (VR) Development
-                        <div class="details">Designing virtual worlds that captivate and engage users.</div>
-                    </li>
-                    <li>
-                        Graphic Design
-                        <div class="details">Transforming ideas into visually impactful designs.</div>
-                    </li>
-                    <li>
-                        Information Technology Management
-                        <div class="details">Ensuring the seamless operation of IT infrastructure.</div>
-                    </li>
-                    <li>
-                        Data Visualization
-                        <div class="details">Transforming complex data into clear, actionable insights.</div>
-                    </li>
-                    <li>
-                        Smart Device Integration
-                        <div class="details">Creating interconnected systems for smarter living.</div>
-                    </li>
-                    <li>
-                        Sustainable Design Practices
-                        <div class="details">Designing with the future in mind, prioritizing sustainability and impact.</div>
-                    </li>
-                    <li>
-                        Service Design
-                        <div class="details">Crafting service experiences that are seamless and user-centered.</div>
-                    </li>
-                    <li>
-                        Creative Strategy Development
-                        <div class="details">Developing innovative strategies that drive brand success and engagement.</div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    
-        <footer>
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/xeoqezab" method="POST">
-    <label>
-        Your email:
-        <input type="email" name="email" required>
-    </label>
-    <label>
-        Your message:
-        <textarea name="message" required></textarea>
-    </label>
-    <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OVIA Studio Lab - Dedicated to excellence in content creation and technology.">
+    <meta name="keywords" content="OVIA, Studio Lab, Technology, AI, Web Development, Data Science">
+    <title>OVIA Studio Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: #333; 
+            background-color: #f9f9f9; 
+            margin: 0; 
+            padding: 0; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            line-height: 1.6; 
+        }
+        header, footer { 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+        }
+        h1, h2 { 
+            color: #222; 
+            margin: 15px 0; 
+            font-weight: 600; 
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            text-align: center; /* Centering the list items */
+            margin: 0;
+            display: inline-block;
+        }
+        li { 
+            position: relative;
+            margin: 10px 0; 
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
+            border-radius: 8px;
+            cursor: pointer;
+            color: #000; /* Black text by default */
+        }
+        li:hover {
+            background-color: #000; /* Black background on hover */
+            color: #fff; /* White text on hover */
+            transform: scale(1.05);
+        }
+        li .details {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Position to the right of the list item */
+            margin-left: 10px; /* Space between the item and details */
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            font-size: 14px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #000; /* Ensure text inside the popup is black */
+        }
+        li:hover .details {
+            display: block;
+            opacity: 1;
+        }
+        footer h2 {
+            margin: 20px 0 10px;
+        }
+        iframe {
+            max-width: 100%;
+        }
+        /* Styles for the form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #444;
+        }
+        .confirmation-message {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OVIA: A Studio Lab Dedicated to Excellence</h1>
+        <p>Creating tailored, exclusive content and technology.</p>
+    </header>
 
-        </footer>
-    </body>
-    </html>
+    <main>
+        <section>
+            <h2>Core Values</h2>
+            <ul>
+                <li>
+                    <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
+                    <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
+                </li>
+                <li>
+                    <strong>Valentia (Valor):</strong> Committed to quality and artistry.
+                    <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
+                </li>
+                <li>
+                    <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
+                    <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
+                </li>
+                <li>
+                    <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
+                    <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
+                </li>
+            </ul>
+
+            <h2>Specialties</h2>
+            <ul>
+                <li>
+                    Machine Learning Engineering
+                    <div class="details">Building intelligent systems that learn and adapt over time.</div>
+                </li>
+                <li>
+                    Artificial Intelligence
+                    <div class="details">Leveraging AI to create innovative solutions for complex challenges.</div>
+                </li>
+                <li>
+                    Data Science
+                    <div class="details">Extracting valuable insights from data to guide decision-making.</div>
+                </li>
+                <li>
+                    Cloud Computing
+                    <div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div>
+                </li>
+                <li>
+                    Cybersecurity
+                    <div class="details">Protecting your digital assets with advanced security technologies.</div>
+                </li>
+                <li>
+                    Digital Marketing
+                    <div class="details">Enhancing brand visibility through data-driven marketing strategies.</div>
+                </li>
+                <li>
+                    Blockchain Technology
+                    <div class="details">Creating secure, decentralized systems for data and transactions.</div>
+                </li>
+                <li>
+                    User Experience (UX) Design
+                    <div class="details">Designing user-centered interfaces for optimal experiences.</div>
+                </li>
+                <li>
+                    User Interface (UI) Design
+                    <div class="details">Crafting intuitive, visually appealing interfaces.</div>
+                </li>
+                <li>
+                    Product Design
+                    <div class="details">Developing products that balance form, function, and innovation.</div>
+                </li>
+                <li>
+                    Web Development
+                    <div class="details">Building responsive and dynamic websites tailored to user needs.</div>
+                </li>
+                <li>
+                    Augmented Reality (AR) Development
+                    <div class="details">Creating immersive experiences that blend the physical and digital worlds.</div>
+                </li>
+                <li>
+                    Virtual Reality (VR) Development
+                    <div class="details">Designing virtual worlds that captivate and engage users.</div>
+                </li>
+                <li>
+                    Graphic Design
+                    <div class="details">Transforming ideas into visually impactful designs.</div>
+                </li>
+                <li>
+                    Information Technology Management
+                    <div class="details">Ensuring the seamless operation of IT infrastructure.</div>
+                </li>
+                <li>
+                    Data Visualization
+                    <div class="details">Transforming complex data into clear, actionable insights.</div>
+                </li>
+                <li>
+                    Smart Device Integration
+                    <div class="details">Creating interconnected systems for smarter living.</div>
+                </li>
+                <li>
+                    Sustainable Design Practices
+                    <div class="details">Designing with the future in mind, prioritizing sustainability and impact.</div>
+                </li>
+                <li>
+                    Service Design
+                    <div class="details">Crafting service experiences that are seamless and user-centered.</div>
+                </li>
+                <li>
+                    Creative Strategy Development
+                    <div class="details">Developing innovative strategies that drive brand success and engagement.</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="https://formspree.io/f/xeoqezab" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message">
+            Thank you for your message. If received will respond
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            // Show the confirmation message
+            confirmationMessage.style.display = 'block';
+            // Optionally reset the form
+            form.reset();
+        });
+    </script>
+</body>
+</html>
