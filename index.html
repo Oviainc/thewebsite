@@ -44,12 +44,34 @@
             margin: 0; 
         }
         li { 
+            position: relative;
             margin: 10px 0; 
-            padding: 5px; 
-            transition: background-color 0.3s; 
+            padding: 10px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+            border-radius: 8px;
         }
         li:hover {
             background-color: #f0f0f0; 
+            transform: scale(1.05);
+        }
+        li .details {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            font-size: 14px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        li:hover .details {
+            display: block;
+            opacity: 1;
         }
         nav {
             margin: 20px 0;
@@ -87,34 +109,106 @@
         <section>
             <h2>Core Values</h2>
             <ul>
-                <li><strong>Ordo (Order):</strong> Embracing innovation to set future standards.</li>
-                <li><strong>Virtus (Excellence):</strong> Committed to quality and artistry.</li>
-                <li><strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.</li>
-                <li><strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.</li>
+                <li>
+                    <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
+                    <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
+                </li>
+                <li>
+                    <strong>Valentia (Valor):</strong> Committed to quality and artistry.
+                    <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
+                </li>
+                <li>
+                    <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
+                    <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
+                </li>
+                <li>
+                    <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
+                    <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
+                </li>
             </ul>
 
             <h2>Specialties</h2>
             <ul>
-                <li>Machine Learning Engineering</li>
-                <li>Artificial Intelligence</li>
-                <li>Data Science</li>
-                <li>Cloud Computing</li>
-                <li>Cybersecurity</li>
-                <li>Digital Marketing</li>
-                <li>Blockchain Technology</li>
-                <li>User Experience (UX) Design</li>
-                <li>User Interface (UI) Design</li>
-                <li>Product Design</li>
-                <li>Web Development</li>
-                <li>Augmented Reality (AR) Development</li>
-                <li>Virtual Reality (VR) Development</li>
-                <li>Graphic Design</li>
-                <li>Information Technology Management</li>
-                <li>Data Visualization</li>
-                <li>Smart Device Integration</li>
-                <li>Sustainable Design Practices</li>
-                <li>Service Design</li>
-                <li>Creative Strategy Development</li>
+                <li>
+                    Machine Learning Engineering
+                    <div class="details">Building intelligent systems that learn and adapt over time.</div>
+                </li>
+                <li>
+                    Artificial Intelligence
+                    <div class="details">Leveraging AI to create innovative solutions for complex challenges.</div>
+                </li>
+                <li>
+                    Data Science
+                    <div class="details">Extracting valuable insights from data to guide decision-making.</div>
+                </li>
+                <li>
+                    Cloud Computing
+                    <div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div>
+                </li>
+                <li>
+                    Cybersecurity
+                    <div class="details">Protecting your digital assets with advanced security technologies.</div>
+                </li>
+                <li>
+                    Digital Marketing
+                    <div class="details">Enhancing brand visibility through data-driven marketing strategies.</div>
+                </li>
+                <li>
+                    Blockchain Technology
+                    <div class="details">Creating secure, decentralized systems for data and transactions.</div>
+                </li>
+                <li>
+                    User Experience (UX) Design
+                    <div class="details">Designing user-centered interfaces for optimal experiences.</div>
+                </li>
+                <li>
+                    User Interface (UI) Design
+                    <div class="details">Crafting intuitive, visually appealing interfaces.</div>
+                </li>
+                <li>
+                    Product Design
+                    <div class="details">Developing products that balance form, function, and innovation.</div>
+                </li>
+                <li>
+                    Web Development
+                    <div class="details">Building responsive and dynamic websites tailored to user needs.</div>
+                </li>
+                <li>
+                    Augmented Reality (AR) Development
+                    <div class="details">Creating immersive experiences that blend the physical and digital worlds.</div>
+                </li>
+                <li>
+                    Virtual Reality (VR) Development
+                    <div class="details">Designing virtual worlds that captivate and engage users.</div>
+                </li>
+                <li>
+                    Graphic Design
+                    <div class="details">Transforming ideas into visually impactful designs.</div>
+                </li>
+                <li>
+                    Information Technology Management
+                    <div class="details">Ensuring the seamless operation of IT infrastructure.</div>
+                </li>
+                <li>
+                    Data Visualization
+                    <div class="details">Transforming complex data into clear, actionable insights.</div>
+                </li>
+                <li>
+                    Smart Device Integration
+                    <div class="details">Creating interconnected systems for smarter living.</div>
+                </li>
+                <li>
+                    Sustainable Design Practices
+                    <div class="details">Designing with the future in mind, prioritizing sustainability and impact.</div>
+                </li>
+                <li>
+                    Service Design
+                    <div class="details">Crafting service experiences that are seamless and user-centered.</div>
+                </li>
+                <li>
+                    Creative Strategy Development
+                    <div class="details">Developing innovative strategies that drive brand success and engagement.</div>
+                </li>
             </ul>
         </section>
     </main>
