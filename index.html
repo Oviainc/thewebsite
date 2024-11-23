@@ -47,12 +47,14 @@
             position: relative;
             margin: 10px 0; 
             padding: 10px; 
-            transition: background-color 0.3s ease, transform 0.3s ease; 
+            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
             border-radius: 8px;
             cursor: pointer;
+            color: #000; /* Black text by default */
         }
         li:hover {
-            background-color: #f0f0f0; 
+            background-color: #000; /* Black background on hover */
+            color: #fff; /* White text on hover */
             transform: scale(1.05);
         }
         li .details {
@@ -75,18 +77,6 @@
             display: block;
             opacity: 1;
         }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: 600;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            color: gray;
-        }
         footer h2 {
             margin: 20px 0 10px;
         }
@@ -100,12 +90,6 @@
         <h1>OVIA: A Studio Lab Dedicated to Excellence</h1>
         <p>Creating tailored, exclusive content and technology.</p>
     </header>
-
-    <nav>
-        <a href="https://oviainc.github.io/data-science/">Data Science</a>
-        <a href="https://oviainc.github.io/artificial-intelligence/">Artificial Intelligence</a>
-        <a href="https://oviainc.github.io/machine-learning-engineering/">Machine Learning Engineering</a>
-    </nav>
 
     <main>
         <section>
