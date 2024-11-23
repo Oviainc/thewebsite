@@ -1,13 +1,12 @@
-# OVIA: A Studio Lab Dedicated to Excellence 🎨✨
+OVIA: A Tailored Studio Lab of Design 🎨✨
 
-Welcome to the OVIA GitHub Pages site! OVIA is a design lab committed to creating tailored, exclusive content and technology that embodies our clients' core values. Our mission is to embrace innovation, excellence, intelligence, and artificial innovation in all our projects.
+Welcome to OVIA’s! As a forward-thinking design lab, OVIA is devoted to crafting unique, groundbreaking content and technologies that reflect the true essence of our clients' values. Our mission is to spark progress, elevate creativity, and seamlessly integrate state-of-the-art advancements into every project.
 
-## Core Values 💡
-
-- **Ordo (Order):** We embrace innovation at every turn, crafting elegant designs and technologies that set the standard for the future. 🚀
-- **Virtus (Excellence):** We are dedicated to the highest levels of quality and artistry in our work, inspiring transformation and growth through our designs. 🌟
-- **Intelligentia (Intelligence):** We integrate advanced technologies and AI into our design processes, creating solutions that are both intuitive and aesthetically compelling. 🤖
-- **Artificialis (Artificial):** We leverage artificial intelligence to enhance user experiences and streamline our design workflows, shaping a sophisticated and dynamic future in design. 🌐
+Core Values 💡
+Ordo (Order): We embrace innovation at every turn, designing elegant solutions and technologies that set the bar for the future. 🚀
+Valentia (Valor): We are committed to the highest standards of quality and artistry, driving transformation and advancement through our designs. 🌟
+Intelligentia (Intelligence): We seamlessly incorporate advanced technologies and AI into our design processes, creating intuitive and visually striking solutions. 🤖
+Artificialis (Artificial): We harness the power of artificial intelligence to enrich user experiences and optimize workflows, shaping a sophisticated and dynamic future in design. 🌐
 
 ## Specialties 🔍
 
@@ -35,7 +34,7 @@ OVIA specializes in the following high-demand areas:
 
 ## Getting Started 🚀
 
-To view the OVIA website, simply visit [[[yourusername.github.io]]](https://oviainc.github.io/thewebsite/)
+To view the OVIA website, simply visit https://oviainc.github.io/thewebsite/
 
 ### Requirements
 
