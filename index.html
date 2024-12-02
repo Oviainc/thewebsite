@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Favicon and Web Manifest -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=1">
+    <link rel="manifest" href="assets/site.webmanifest?v=1">
+
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ovia - A design lab and creation studio dedicated to your satisfaction">
     <meta name="keywords" content="Ovia, Studio Lab, Technology, AI, Web Development, Data Science">
     <title>OVIA Studio Lab</title>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Internal Styles -->
     <style>
         body { 
             font-family: 'Inter', sans-serif; 
@@ -39,7 +51,7 @@
         ul { 
             list-style-type: none; 
             padding: 0; 
-            text-align: center; /* Centering the list items */
+            text-align: center; 
             margin: 0;
             display: inline-block;
         }
@@ -50,19 +62,19 @@
             transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
             border-radius: 8px;
             cursor: pointer;
-            color: #000; /* Black text by default */
+            color: #000;
         }
         li:hover {
-            background-color: #000; /* Black background on hover */
-            color: #fff; /* White text on hover */
+            background-color: #000;
+            color: #fff;
             transform: scale(1.05);
         }
         li .details {
             display: none;
             position: absolute;
             top: 0;
-            left: 100%; /* Position to the right of the list item */
-            margin-left: 10px; /* Space between the item and details */
+            left: 100%;
+            margin-left: 10px;
             background-color: #fff;
             padding: 10px;
             border-radius: 8px;
@@ -72,7 +84,7 @@
             z-index: 1;
             opacity: 0;
             transition: opacity 0.3s ease;
-            color: #000; /* Ensure text inside the popup is black */
+            color: #000;
         }
         li:hover .details {
             display: block;
@@ -84,7 +96,8 @@
         iframe {
             max-width: 100%;
         }
-        /* Styles for the form */
+
+        /* Form Styles */
         form {
             max-width: 600px;
             margin: 0 auto;
@@ -231,48 +244,42 @@
                 </li>
                 <li>
                     Service Design
-                    <div class="details">Crafting service experiences that are seamless and user-centered.</div>
-                </li>
-                <li>
-                    Creative Strategy Development
-                    <div class="details">Developing innovative strategies that drive brand success and engagement.</div>
+                    <div class="details">Focusing on the holistic experience of your products and services.</div>
                 </li>
             </ul>
+
+            <h2>Reach Out to Us</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="confirmation-message" id="confirmation-message">Thank you for reaching out! We’ll get back to you soon.</div>
         </section>
+
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </main>
 
     <footer>
-        <h2>Contact Us</h2>
-        <form id="contactForm" action="https://formspree.io/f/xeoqezab" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email" required>
-            </label>
-            <label>
-                Your message:
-                <textarea name="message" required></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
-        <div id="confirmationMessage" class="confirmation-message">
-            Thank you for taking the time to explore our website. We truly appreciate your interest in what we offer. We hope the information you found was helpful and valuable.
-
-If you have any questions or would like to learn more about our services, don’t hesitate to get in touch. We’re here to assist you and would love to hear from you.
-
-Thanks again for your visit, and we look forward to connecting
-        </div>
+        <h2>Contact Ovia</h2>
+        <p>Get in touch for personalized consultations.</p>
     </footer>
 
     <script>
-        const form = document.getElementById('contactForm');
-        const confirmationMessage = document.getElementById('confirmationMessage');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting immediately
-            // Show the confirmation message
-            confirmationMessage.style.display = 'block';
-            // Optionally reset the form
-            form.reset();
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('confirmation-message').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('confirmation-message').style.display = 'none';
+            }, 5000);
         });
     </script>
 </body>
