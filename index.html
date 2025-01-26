@@ -250,7 +250,47 @@
 
             <section style="text-align: center; padding: 20px;">
     <h2>Contact</h2>
-<iframe src="https://forms.gle/6sCCaHQC2XPztnU27" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<form id="my-form" action="https://formspree.io/f/mannvvol" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" required />
+  <label>Message:</label>
+  <input type="text" name="message" required />
+  <button type="submit">Submit</button>
+  <p id="my-form-status"></p>
+</form>
+
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset();
+      } else {
+        response.json().then(data => {
+          if (data.errors) {
+            status.innerHTML = data.errors.map(error => error.message).join(", ");
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form.";
+          }
+        });
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form.";
+    });
+  }
+  form.addEventListener("submit", handleSubmit);
+</script>
 
 <div class="confirmation-message" id="confirmation-message" style="display: none; margin-top: 20px; padding: 10px; background-color: #4CAF50; color: white; border-radius: 5px; text-align: center;">
     Thank you for reaching out! We may get back to you soon.
