@@ -20,37 +20,81 @@
     
     <!-- Internal Styles -->
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: #333; 
+            background-color: #f9f9f9; 
+            margin: 0; 
+            padding: 0; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            line-height: 1.6; 
+        }
+        header, footer { 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+        }
+        h1, h2 { 
+            color: #222; 
+            margin: 15px 0; 
+            font-weight: 600; 
+        }
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            text-align: center; 
             margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            line-height: 1.6;
+            display: inline-block;
         }
-        header, footer {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px 0;
+        li { 
+            position: relative;
+            margin: 10px 0; 
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
             border-radius: 8px;
+            cursor: pointer;
+            color: #000;
         }
-        h1, h2 {
-            color: #222;
-            margin: 15px 0;
-            font-weight: 600;
+        li:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(1.05);
         }
-        footer p {
+        li .details {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
             font-size: 14px;
-            color: #777;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #000;
+        }
+        li:hover .details {
+            display: block;
+            opacity: 1;
+        }
+        footer h2 {
+            margin: 20px 0 10px;
+        }
+        iframe {
+            max-width: 100%;
         }
 
         /* Form Styles */
@@ -67,7 +111,7 @@
             display: block;
             margin-bottom: 10px;
             font-size: 16px;
-            text-align: left;
+            text-align: left; /* Align label text to the left */
         }
         form input, form textarea {
             width: 100%;
@@ -75,7 +119,7 @@
             margin: 5px 0 15px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            text-align: center;
+            text-align: center; /* Center text inside input fields */
         }
         form button {
             padding: 10px 20px;
@@ -84,8 +128,6 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-transform: uppercase;
-            margin: 10px 0;
         }
         form button:hover {
             background-color: #444;
@@ -98,15 +140,6 @@
             margin-top: 20px;
             border-radius: 5px;
         }
-
-        /* Utility for centering content */
-        .center-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -116,77 +149,185 @@
         <p>Creating tailored, exclusive content and technology.</p>
     </header>
 
-    <main class="center-content">
+    <main>
         <section>
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/mannvvol" method="POST" id="my-form">
-                <label for="email">
-                    Email:
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        required
-                        placeholder="Enter your email"
-                    />
-                </label>
-                <label for="message">
-                    Message:
-                    <textarea
-                        name="message"
-                        id="message"
-                        required
-                        placeholder="Enter your message"
-                    ></textarea>
-                </label>
-                <button type="submit">Send</button>
-                <p id="my-form-status" style="margin-top: 10px; font-size: 14px; color: #777;"></p>
-            </form>
+            <h2>Core Values</h2>
+            <ul>
+                <li>
+                    <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
+                    <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
+                </li>
+                <li>
+                    <strong>Valentia (Valor):</strong> Committed to quality and artistry.
+                    <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
+                </li>
+                <li>
+                    <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
+                    <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
+                </li>
+                <li>
+                    <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
+                    <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
+                </li>
+            </ul>
 
-            <div class="confirmation-message" id="confirmation-message">
-                Thank you for reaching out! We may get back to you soon.
-            </div>
-        </section>
-    </main>
+            <h2>Specialties</h2>
+            <ul>
+                <li>
+                    Machine Learning Engineering
+                    <div class="details">Building intelligent systems that learn and adapt over time.</div>
+                </li>
+                <li>
+                    Artificial Intelligence
+                    <div class="details">Leveraging AI to create innovative solutions for complex challenges.</div>
+                </li>
+                <li>
+                    Data Science
+                    <div class="details">Extracting valuable insights from data to guide decision-making.</div>
+                </li>
+                <li>
+                    Cloud Computing
+                    <div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div>
+                </li>
+                <li>
+                    Cybersecurity
+                    <div class="details">Protecting your digital assets with advanced security technologies.</div>
+                </li>
+                <li>
+                    Digital Marketing
+                    <div class="details">Enhancing brand visibility through data-driven marketing strategies.</div>
+                </li>
+                <li>
+                    Blockchain Technology
+                    <div class="details">Creating secure, decentralized systems for data and transactions.</div>
+                </li>
+                <li>
+                    User Experience (UX) Design
+                    <div class="details">Designing user-centered interfaces for optimal experiences.</div>
+                </li>
+                <li>
+                    User Interface (UI) Design
+                    <div class="details">Crafting intuitive, visually appealing interfaces.</div>
+                </li>
+                <li>
+                    Product Design
+                    <div class="details">Developing products that balance form, function, and innovation.</div>
+                </li>
+                <li>
+                    Web Development
+                    <div class="details">Building responsive and dynamic websites tailored to user needs.</div>
+                </li>
+                <li>
+                    Augmented Reality (AR) Development
+                    <div class="details">Creating immersive experiences that blend the physical and digital worlds.</div>
+                </li>
+                <li>
+                    Virtual Reality (VR) Development
+                    <div class="details">Designing virtual worlds that captivate and engage users.</div>
+                </li>
+                <li>
+                    Graphic Design
+                    <div class="details">Transforming ideas into visually impactful designs.</div>
+                </li>
+                <li>
+                    Information Technology Management
+                    <div class="details">Ensuring the seamless operation of IT infrastructure.</div>
+                </li>
+                <li>
+                    Data Visualization
+                    <div class="details">Transforming complex data into clear, actionable insights.</div>
+                </li>
+                <li>
+                    Smart Device Integration
+                    <div class="details">Creating interconnected systems for smarter living.</div>
+                </li>
+                <li>
+                    Sustainable Design Practices
+                    <div class="details">Designing with the future in mind, prioritizing sustainability and impact.</div>
+                </li>
+                <li>
+                    Service Design
+                    <div class="details">Focusing on the holistic experience of your products and services.</div>
+                </li>
+            </ul>
 
-    <footer>
-        <p>&copy; Always Ovia Studio Lab. All Rights Reserved.</p>
-        <p>Concept to Creation, Forged in Innovation and Guided by Ovia</p>
-    </footer>
+            <section style="text-align: center; padding: 20px;">
+                <h2>Contact Us</h2>
+                <form
+                    action="https://formspree.io/f/mannvvol"
+                    method="POST"
+                    id="my-form"
+                    style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: left;"
+                >
+                    <label style="display: block; margin-bottom: 10px; font-size: 16px; color: #333;">
+                        Email:
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; display: block; margin-left: auto; margin-right: auto;"
+                        />
+                    </label>
+                    <label style="display: block; margin-bottom: 10px; font-size: 16px; color: #333;">
+                        Message:
+                        <textarea
+                            name="message"
+                            required
+                            style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; display: block; margin-left: auto; margin-right: auto;"
+                        ></textarea>
+                    </label>
+                    <button
+                        type="submit"
+                        style="padding: 10px 20px; background-color: #000; color: #fff; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; display: block; margin-left: auto; margin-right: auto;"
+                    >
+                        Send
+                    </button>
+                    <p id="my-form-status" style="margin-top: 10px; font-size: 14px; color: #777;"></p>
+                </form>
 
-    <script>
-        var form = document.getElementById("my-form");
+                <div class="confirmation-message" id="confirmation-message" style="display: none; margin-top: 20px; padding: 10px; background-color: #4CAF50; color: white; border-radius: 5px; text-align: center;">
+                    Thank you for reaching out! We may get back to you soon.
+                </div>
 
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "Thanks for your submission!";
-                    form.reset();
-                    document.getElementById("confirmation-message").style.display = "block";
-                } else {
-                    response.json().then(data => {
-                        if (data.errors) {
-                            status.innerHTML = data.errors.map(error => error.message).join(", ");
-                        } else {
+                <script>
+                    var form = document.getElementById("my-form");
+
+                    async function handleSubmit(event) {
+                        event.preventDefault();
+                        var status = document.getElementById("my-form-status");
+                        var data = new FormData(event.target);
+                        fetch(event.target.action, {
+                            method: form.method,
+                            body: data,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        }).then(response => {
+                            if (response.ok) {
+                                status.innerHTML = "Thanks for your submission!";
+                                form.reset();
+                                document.getElementById("confirmation-message").style.display = "block";
+                            } else {
+                                response.json().then(data => {
+                                    if (data.errors) {
+                                        status.innerHTML = data.errors.map(error => error.message).join(", ");
+                                    } else {
+                                        status.innerHTML = "Oops! There was a problem submitting your form.";
+                                    }
+                                });
+                            }
+                        }).catch(error => {
                             status.innerHTML = "Oops! There was a problem submitting your form.";
-                        }
-                    });
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form.";
-            });
-        }
-        form.addEventListener("submit", handleSubmit);
-    </script>
+                        });
+                    }
+                    form.addEventListener("submit", handleSubmit);
+                </script>
+            </section>
+        </main>
+
+        <footer>
+            <p style="font-size: 14px; color: #777; text-align: center;">&copy; Always Ovia Studio Lab. All Rights Reserved.</p>
+            <p style="font-size: 12px; color: #333; text-align: center;">Concept to Creation, Forged in Innovation and Guided by Ovia</p>
+        </footer>
 </body>
 </html>
-
