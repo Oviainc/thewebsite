@@ -257,34 +257,31 @@
 
             <section style="text-align: center; padding: 20px;">
 
-  <form
-    action="https://formspree.io/f/mannvvol"
-    method="POST"
-    id="my-form"
-  >
-    <h2>Contact</h2>
-    <label>
-      Email:
-      <input
-        type="email"
-        name="email"
-        required
-      />
-    </label>
-    <label>
-      Message:
-      <textarea
-        name="message"
-        required
-      ></textarea>
-    </label>
-    <button
-      type="submit"
-    >
-      Send
-    </button>
-    <p id="my-form-status"></p>
-  </form>
+<form action="https://formspree.io/f/mannvvol" method="POST" id="my-form" style="max-width: 600px; margin: 0 auto; text-align: center;">
+  <h2>Contact</h2>
+  <label style="display: block; margin-bottom: 10px; font-size: 16px;">
+    Email:
+    <input
+      type="email"
+      name="email"
+      required
+      style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; text-align: center;" />
+  </label>
+  <label style="display: block; margin-bottom: 10px; font-size: 16px;">
+    Message:
+    <textarea
+      name="message"
+      required
+      style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; text-align: center;"></textarea>
+  </label>
+  <button
+    type="submit"
+    style="padding: 10px 20px; background-color: #000; color: #fff; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; display: block; margin-left: auto; margin-right: auto;">
+    Send
+  </button>
+  <p id="my-form-status"></p>
+</form>
+
 
   <div class="confirmation-message" id="confirmation-message" style="display: none;">
     Thank you for reaching out! We may get back to you soon.
