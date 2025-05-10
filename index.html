@@ -62,295 +62,56 @@
             transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; 
             border-radius: 8px;
             cursor: pointer;
-            color: #000;
         }
-        li:hover {
-            background-color: #000;
-            color: #fff;
-            transform: scale(1.05);
+        li:hover { 
+            background-color: #f1f1f1; 
+            transform: scale(1.05); 
         }
-        li .details {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 100%;
-            margin-left: 10px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            font-size: 14px;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            color: #000;
+        li .hover-text { 
+            visibility: hidden; 
+            position: absolute; 
+            bottom: -30px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: #222; 
+            color: #fff; 
+            padding: 5px 10px; 
+            border-radius: 4px; 
+            font-size: 14px; 
+            opacity: 0; 
+            transition: visibility 0s, opacity 0.3s ease;
         }
-        li:hover .details {
-            display: block;
+        li:hover .hover-text { 
+            visibility: visible; 
             opacity: 1;
-        }
-        footer h2 {
-            margin: 20px 0 10px;
-        }
-        iframe {
-            max-width: 100%;
-        }
-
-        /* Form Styles */
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: left; /* Left-aligned content */
-            background-color: transparent; /* Removed background */
-            border: none; /* Removed border */
-            box-shadow: none; /* Removed shadow */
-        }
-        form h2 {
-            text-align: center; /* Centered form heading */
-        }
-        form label {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 16px;
-            text-align: left; /* Align label text to the left */
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            text-align: center; /* Center text inside input fields */
-        }
-        form button {
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #444;
-        }
-        .confirmation-message {
-            display: none;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-   <header style="text-align: center; padding: 10px 0; background: none;">
-  <h1 style="font-size: 24px; color: #333; font-weight: 700;">Ovia: A Studio Lab of Design</h1>
-<p style="font-size: 12px; color: #555; font-weight: 500;">Creating tailored, exclusive content and technology.</p>
-       <p style="font-size: 10px; color: #777; font-weight: 600;">#DedicatedToYourSatisfaction</p>
-  
-</header>
 
+    <header>
+        <h1>Welcome to Ovia Studio Lab</h1>
+        <h2>Your Creative Technology and AI Lab</h2>
+    </header>
 
-    <main>
-        <section>
-            <h2>Core Values</h2>
-            <ul>
-                <li>
-                    <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
-                    <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
-                </li>
-                <li>
-                    <strong>Valentia (Valor):</strong> Committed to quality and artistry.
-                    <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
-                </li>
-                <li>
-                    <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
-                    <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
-                </li>
-                <li>
-                    <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
-                    <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
-                </li>
-            </ul>
+    <ul>
+        <li>
+            <strong>AI Optimization</strong>
+            <span class="hover-text"><a href="/ai-optimization" style="color: white; text-decoration: none;">Learn More</a></span>
+        </li>
+        <li>
+            <strong>Data Science Solutions</strong>
+            <span class="hover-text"><a href="/data-science" style="color: white; text-decoration: none;">Learn More</a></span>
+        </li>
+        <li>
+            <strong>Machine Learning Models</strong>
+            <span class="hover-text"><a href="/ml-models" style="color: white; text-decoration: none;">Learn More</a></span>
+        </li>
+    </ul>
 
-            <h2>Specialties</h2>
-           <ul class="specialties-list">
-    <li>
-        <span class="title">Machine Learning Engineering</span>
-        <div class="details">Building intelligent systems that learn and adapt over time.</div>
-        <div class="hover-link"><a href="specialties/machine-learning-engineering.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Artificial Intelligence</span>
-        <div class="details">Leveraging AI to create innovative solutions for complex challenges.</div>
-        <div class="hover-link"><a href="specialties/artificial-intelligence.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Data Science</span>
-        <div class="details">Extracting valuable insights from data to guide decision-making.</div>
-        <div class="hover-link"><a href="specialties/data-science.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Cloud Computing</span>
-        <div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div>
-        <div class="hover-link"><a href="specialties/cloud-computing.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Cybersecurity</span>
-        <div class="details">Protecting your digital assets with advanced security technologies.</div>
-        <div class="hover-link"><a href="specialties/cybersecurity.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Digital Marketing</span>
-        <div class="details">Enhancing brand visibility through data-driven marketing strategies.</div>
-        <div class="hover-link"><a href="specialties/digital-marketing.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Blockchain Technology</span>
-        <div class="details">Creating secure, decentralized systems for data and transactions.</div>
-        <div class="hover-link"><a href="specialties/blockchain-technology.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">User Experience (UX) Design</span>
-        <div class="details">Designing user-centered interfaces for optimal experiences.</div>
-        <div class="hover-link"><a href="specialties/ux-design.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">User Interface (UI) Design</span>
-        <div class="details">Crafting intuitive, visually appealing interfaces.</div>
-        <div class="hover-link"><a href="specialties/ui-design.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Product Design</span>
-        <div class="details">Developing products that balance form, function, and innovation.</div>
-        <div class="hover-link"><a href="specialties/product-design.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Web Development</span>
-        <div class="details">Building responsive and dynamic websites tailored to user needs.</div>
-        <div class="hover-link"><a href="specialties/web-development.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Augmented Reality (AR) Development</span>
-        <div class="details">Creating immersive experiences that blend the physical and digital worlds.</div>
-        <div class="hover-link"><a href="specialties/ar-development.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Virtual Reality (VR) Development</span>
-        <div class="details">Designing virtual worlds that captivate and engage users.</div>
-        <div class="hover-link"><a href="specialties/vr-development.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Graphic Design</span>
-        <div class="details">Transforming ideas into visually impactful designs.</div>
-        <div class="hover-link"><a href="specialties/graphic-design.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Information Technology Management</span>
-        <div class="details">Ensuring the seamless operation of IT infrastructure.</div>
-        <div class="hover-link"><a href="specialties/it-management.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Data Visualization</span>
-        <div class="details">Transforming complex data into clear, actionable insights.</div>
-        <div class="hover-link"><a href="specialties/data-visualization.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Smart Device Integration</span>
-        <div class="details">Creating interconnected systems for smarter living.</div>
-        <div class="hover-link"><a href="specialties/smart-device-integration.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Sustainable Design Practices</span>
-        <div class="details">Designing with the future in mind, prioritizing sustainability and impact.</div>
-        <div class="hover-link"><a href="specialties/sustainable-design.html">Learn More</a></div>
-    </li>
-    <li>
-        <span class="title">Service Design</span>
-        <div class="details">Focusing on the holistic experience of your products and services.</div>
-        <div class="hover-link"><a href="specialties/service-design.html">Learn More</a></div>
-    </li>
-</ul>
-
-            <section style="text-align: center; padding: 20px;">
-
-<form action="https://formspree.io/f/mannvvol" method="POST" id="my-form" style="max-width: 600px; margin: 0 auto; text-align: center;">
-  <h2>Contact</h2>
-  <label style="display: block; text-align: center; margin-bottom: 10px; font-size: 16px;">
-    Email:
-    <input
-      type="email"
-      name="email"
-      required
-      style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; text-align: center;" />
-  </label>
-  <label style="display: block; text-align: center; margin-bottom: 10px; font-size: 16px;">
-    Message:
-    <textarea
-      name="message"
-      required
-      style="width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; text-align: center;"></textarea>
-  </label>
-  <button
-    type="submit"
-    style="padding: 10px 20px; background-color: #000; color: #fff; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; display: block; margin-left: auto; margin-right: auto;">
-    Send
-  </button>
-  <p id="my-form-status"></p>
-</form>
-
-
-
-  <div class="confirmation-message" id="confirmation-message" style="display: none;">
-    Thank you for reaching out! We may get back to you soon.
-  </div>
-
-  <script>
-    var form = document.getElementById("my-form");
-
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset();
-          document.getElementById("confirmation-message").style.display = "block";
-        } else {
-          response.json().then(data => {
-            if (data.errors) {
-              status.innerHTML = data.errors.map(error => error.message).join(", ");
-            } else {
-              status.innerHTML = "There was a problem submitting your form.";
-            }
-          });
-        }
-      }).catch(error => {
-        status.innerHTML = "There was a problem submitting your form.";
-      });
-    }
-    form.addEventListener("submit", handleSubmit);
-  </script>
-</section>
-
-    </main>
-
-    <footer style="text-align: center; padding: 10px 0; background: none;">
-        <p style="font-size: 10px; color: #555;">Concept to Creation, Forged in Innovation</p>
-        <p style="font-size: 10px; color: #777;">Always Ovia Studio Lab.</p>
-        <p style="font-size: 10px; color: #777;">&copy; All Rights Reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Ovia Studio Lab. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
