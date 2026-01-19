@@ -22,11 +22,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
     header, footer {
       background-color: #ffffff;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      text-align: center;
       padding: 24px;
       max-width: 880px;
       width: 100%;
@@ -41,7 +41,6 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.06);
       width: 100%;
       margin: 0 20px 48px;
-      text-align: center;
     }
     h1, h2, h3 {
       color: #111;
@@ -62,23 +61,17 @@
       list-style: none;
       padding: 0;
       margin: 0 0 2.5rem;
-      text-align: left;
       max-width: 720px;
       margin-left: auto;
       margin-right: auto;
+      text-align: center; /* Center all list content */
     }
     ul li {
       margin-bottom: 1rem;
       font-size: 1.05rem;
-      position: relative;
-      padding-left: 1.8rem;
-    }
-    ul li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #000;
-      font-weight: bold;
+      display: inline-block; /* Helps center bullets/items */
+      width: 100%;
+      max-width: 600px;
     }
     .highlight {
       font-weight: 600;
@@ -94,9 +87,9 @@
 <body>
 
   <header>
-    <h1>Artificial Intelligence & Intelligent Systems by OVIA Studio Lab</h1>
+    <h1>Artificial Intelligence & Intelligent Systems</h1>
     <p style="font-size: 15px; color: #444; margin: 0.6rem 0;">
-      AI that doesn't just think — it delivers results: smarter decisions, faster automation, and real business growth.
+      AI that thinks ahead — delivering smarter decisions, faster automation, and measurable business growth.
     </p>
     <p style="font-size: 12px; color: #666; font-weight: 600;">#AIWithOVIA</p>
   </header>
@@ -104,41 +97,41 @@
   <main>
     <section>
       <p>
-        In 2026, AI is the new competitive edge. At OVIA Studio Lab, we build powerful, practical AI and intelligent systems that automate workflows, predict outcomes, understand language, and make decisions — all tailored to your business goals.
+        In 2026, AI is the ultimate competitive advantage. At OVIA Studio Lab, we build intelligent systems that automate, predict, understand, and decide — all engineered specifically for your business goals.
       </p>
 
-      <h2>Our AI & Intelligent Systems Services</h2>
+      <h2>Our AI Services</h2>
       <ul>
-        <li>Custom AI agents and autonomous workflows that run 24/7</li>
-        <li>Predictive analytics & forecasting that reduce risk and cost</li>
-        <li>Natural Language Processing (NLP) for smarter chat, search & support</li>
-        <li>Real-time decision engines for operations and customer experience</li>
-        <li>Generative AI & automation that create content, code, and insights</li>
-        <li>End-to-end AI deployment — from prototype to production scale</li>
+        <li>Custom AI agents & autonomous workflows running 24/7</li>
+        <li>Predictive analytics & forecasting to reduce risk & cost</li>
+        <li>Advanced NLP for smarter chat, search & customer support</li>
+        <li>Real-time decision engines for operations & CX</li>
+        <li>Generative AI to create content, code & insights instantly</li>
+        <li>End-to-end deployment — from prototype to enterprise scale</li>
       </ul>
 
-      <h2>Industries We Power with AI</h2>
-      <p>Our solutions deliver measurable ROI across high-impact sectors:</p>
+      <h2>Industries We Power</h2>
+      <p>Proven results across high-impact sectors:</p>
       <ul>
-        <li><span class="highlight">Healthcare</span>: Faster diagnostics, personalized care, resource optimization</li>
-        <li><span class="highlight">Finance</span>: Fraud prevention, risk scoring, automated trading & compliance</li>
-        <li><span class="highlight">E-commerce & Retail</span>: Hyper-personalized recommendations, dynamic pricing</li>
-        <li><span class="highlight">Manufacturing</span>: Predictive maintenance, quality control, supply chain intelligence</li>
-        <li><span class="highlight">Marketing & Sales</span>: Audience segmentation, campaign prediction, lead scoring</li>
+        <li><span class="highlight">Healthcare</span>: Faster diagnostics, personalized care, optimized resources</li>
+        <li><span class="highlight">Finance</span>: Fraud detection, risk scoring, automated compliance</li>
+        <li><span class="highlight">E-commerce</span>: Hyper-personalized recommendations, dynamic pricing</li>
+        <li><span class="highlight">Manufacturing</span>: Predictive maintenance, quality & supply chain intelligence</li>
+        <li><span class="highlight">Marketing</span>: Audience segmentation, campaign prediction, lead scoring</li>
       </ul>
 
-      <h2>Technologies & Tools We Master</h2>
+      <h2>Technologies We Master</h2>
       <ul>
-        <li>PyTorch, TensorFlow, Hugging Face for cutting-edge models</li>
-        <li>LangChain, LlamaIndex, AutoGen for advanced AI agents</li>
+        <li>PyTorch, TensorFlow, Hugging Face for state-of-the-art models</li>
+        <li>LangChain, LlamaIndex, AutoGen for powerful AI agents</li>
         <li>AWS SageMaker, Azure AI, Google Vertex AI for scalable deployment</li>
         <li>Tableau, Power BI, Looker for intelligent visualization</li>
-        <li>Kubernetes, Docker, Terraform for production-grade AI ops</li>
+        <li>Kubernetes, Docker, Terraform for production-grade MLOps</li>
       </ul>
 
-      <h2>Why Choose OVIA Studio Lab?</h2>
+      <h2>Why OVIA Studio Lab?</h2>
       <p>
-        We don't build generic AI. We engineer intelligent systems that solve your exact problems, reduce costs, increase revenue, and scale effortlessly. From prototype to enterprise-grade deployment — we deliver AI that works, today and tomorrow.
+        We don’t deliver generic AI. We engineer intelligent systems that solve your exact problems, cut costs, boost revenue, and scale effortlessly. From day-one prototype to enterprise-grade production — we deliver AI that works.
       </p>
     </section>
   </main>
