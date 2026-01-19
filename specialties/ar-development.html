@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OVIA Inc. delivers cutting-edge Augmented Reality (AR) solutions in 2026 — immersive experiences, virtual try-ons, training simulations, and more. Transform retail, education, healthcare, manufacturing, and real estate with powerful AR technology.">
-  <meta name="keywords" content="Augmented Reality development, AR solutions 2026, immersive AR, AR for business, AR training, virtual product visualization, AR marketing, OVIA Inc">
-  <title>Augmented Reality Development | OVIA Inc.</title>
+  <meta name="description" content="OVIA Inc. – Augmented Reality development & immersive AR solutions. Virtual try-ons, training simulations, product visualization, and marketing experiences that boost engagement and ROI.">
+  <meta name="keywords" content="augmented reality development, AR solutions, immersive AR, virtual try-ons, AR training, AR marketing, AR product visualization, WebAR, OVIA Inc">
+  <title>Augmented Reality Development & Immersive AR Solutions | OVIA Inc.</title>
 
   <!-- Favicon -->
   <link rel="icon" href="/thewebsite/assets/favicon.ico" type="image/x-icon" />
@@ -22,16 +22,22 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
     header, footer {
       background-color: #ffffff;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      text-align: center;
       padding: 24px;
       max-width: 880px;
       width: 100%;
       margin: 20px;
       border-radius: 12px;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     main {
       max-width: 880px;
@@ -41,7 +47,6 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.06);
       width: 100%;
       margin: 0 20px 48px;
-      text-align: center;
     }
     h1, h2, h3 {
       color: #111;
@@ -62,23 +67,25 @@
       list-style: none;
       padding: 0;
       margin: 0 0 2.5rem;
-      text-align: left;
       max-width: 720px;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
     ul li {
       margin-bottom: 1rem;
       font-size: 1.05rem;
-      position: relative;
-      padding-left: 1.8rem;
+      display: inline-block;
+      width: 100%;
+      max-width: 600px;
     }
-    ul li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
+    a {
       color: #000;
-      font-weight: bold;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #222;
     }
     .highlight {
       font-weight: 600;
@@ -94,52 +101,54 @@
 <body>
 
   <header>
-    <h1>Augmented Reality Solutions by OVIA Inc.</h1>
-    <p style="font-size: 15px; color: #444; margin: 0.6rem 0;">
-      Immersive AR experiences that boost engagement, reduce costs, and transform how people interact with your brand.
-    </p>
-    <p style="font-size: 12px; color: #666; font-weight: 600;">#ARWithOVIA</p>
+    <div class="header-content">
+      <h1>Augmented Reality Solutions</h1>
+      <p style="font-size: 15px; color: #444; margin: 0.6rem 0;">
+        Immersive AR experiences that boost engagement, reduce costs, and transform how people interact with your brand.
+      </p>
+      <p style="font-size: 12px; color: #666; font-weight: 600;">#ARWithOVIA</p>
+    </div>
   </header>
 
   <main>
     <section>
       <p>
-        In 2026, AR is no longer experimental — it's a proven business driver. At OVIA Inc., we create high-impact AR solutions that blend digital and physical worlds seamlessly, delivering measurable results across retail, education, healthcare, manufacturing, and real estate.
+        At OVIA Inc., we create high-impact AR solutions that blend digital and physical worlds seamlessly — delivering real ROI through virtual try-ons, training, marketing, and more.
       </p>
 
       <h2>Our AR Services</h2>
       <ul>
-        <li>Custom AR apps & WebAR experiences (no app download needed)</li>
+        <li>Custom AR apps & <a href="https://www.8thwall.com/" target="_blank">WebAR</a> experiences (no app download needed)</li>
         <li>Interactive marketing & virtual try-ons that increase conversions</li>
-        <li>Real-time product visualization and 3D configurators</li>
-        <li>Immersive AR training simulations with 4x better retention</li>
+        <li>Real-time product visualization & 3D configurators</li>
+        <li>Immersive AR training simulations with better retention</li>
         <li>AR-powered remote assistance & field support</li>
         <li>AI-enhanced AR content creation & storytelling</li>
       </ul>
 
-      <h2>Industries We Transform with AR</h2>
-      <p>Our solutions deliver real ROI — from reduced returns to faster training and higher engagement:</p>
+      <h2>Industries We Transform</h2>
+      <p>Measurable results across high-demand sectors:</p>
       <ul>
-        <li><span class="highlight">Retail</span>: Virtual try-ons, in-store navigation, and interactive catalogs</li>
-        <li><span class="highlight">Education</span>: Immersive simulations and interactive learning modules</li>
-        <li><span class="highlight">Healthcare</span>: AR-assisted diagnostics, surgical planning, and patient education</li>
-        <li><span class="highlight">Manufacturing</span>: AR-guided maintenance, assembly, and quality control</li>
-        <li><span class="highlight">Real Estate</span>: Virtual property tours, staging, and renovation previews</li>
+        <li><span class="highlight">Retail</span>: Virtual try-ons, in-store navigation, interactive catalogs</li>
+        <li><span class="highlight">Education</span>: Immersive simulations & interactive learning modules</li>
+        <li><span class="highlight">Healthcare</span>: AR-assisted diagnostics, surgical planning, patient education</li>
+        <li><span class="highlight">Manufacturing</span>: AR-guided maintenance, assembly, quality control</li>
+        <li><span class="highlight">Real Estate</span>: Virtual property tours, staging, renovation previews</li>
       </ul>
 
-      <h2>Technologies & Tools We Master</h2>
+      <h2>Technologies We Master</h2>
       <ul>
-        <li>Unity 3D & AR Foundation (cross-platform powerhouse)</li>
-        <li>ARKit (iOS) & ARCore (Android) for native precision</li>
-        <li>Vuforia & Niantic Lightship for advanced tracking</li>
-        <li>WebAR / 8th Wall for instant browser-based experiences</li>
+        <li><a href="https://unity.com/" target="_blank">Unity 3D</a> & AR Foundation (cross-platform powerhouse)</li>
+        <li><a href="https://developer.apple.com/augmented-reality/arkit/" target="_blank">ARKit</a> (iOS) & <a href="https://developers.google.com/ar" target="_blank">ARCore</a> (Android) for native precision</li>
+        <li><a href="https://developer.vuforia.com/" target="_blank">Vuforia</a> & <a href="https://lightship.dev/" target="_blank">Niantic Lightship</a> for advanced tracking</li>
+        <li><a href="https://www.8thwall.com/" target="_blank">WebAR / 8th Wall</a> for instant browser-based experiences</li>
         <li>Blender, Maya & AI tools for stunning 3D assets</li>
         <li>AWS, Azure & Google Cloud for scalable deployment</li>
       </ul>
 
-      <h2>Why OVIA Inc.?</h2>
+      <h2>Why Choose OVIA Inc.?</h2>
       <p>
-        We don't just build AR — we create experiences that sell more, train faster, and engage deeper. With proven results, deep industry expertise, and end-to-end delivery (concept to launch), OVIA turns AR into your competitive advantage.
+        We don’t just build AR — we create experiences that sell more, train faster, and engage deeper. With proven results, deep expertise, and end-to-end delivery, OVIA turns AR into your competitive advantage.
       </p>
     </section>
   </main>
