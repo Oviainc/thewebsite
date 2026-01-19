@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OVIA Studio Lab — Design & technology studio specializing in AI, web development, cybersecurity, cloud, and innovative solutions. Dedicated to your satisfaction.">
-    <meta name="keywords" content="OVIA, Studio Lab, AI, Machine Learning, Cybersecurity, Cloud Computing, Web Development, UX Design">
-    <title>OVIA Studio Lab — Design & Technology</title>
+    <meta name="description" content="OVIA Studio Lab — A design and technology studio creating tailored, exclusive AI, web, and innovative solutions. Dedicated to your satisfaction.">
+    <meta name="keywords" content="OVIA, Studio Lab, AI, Design, Technology, Web Development, Cybersecurity">
+    <title>OVIA Studio Lab</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico?v=1">
@@ -17,132 +17,156 @@
 
     <style>
         :root {
-            --primary: #000;
+            --primary: #111;
             --text: #222;
             --gray: #555;
-            --light: #f9f9f9;
-            --accent: #0066cc;
-            --shadow: 0 4px 16px rgba(0,0,0,0.08);
+            --light-bg: #fafafa;
+            --card-bg: #ffffff;
+            --accent: #0055bb;
+            --shadow: 0 6px 20px rgba(0,0,0,0.08);
         }
         * { box-sizing: border-box; margin:0; padding:0; }
         body {
             font-family: 'Inter', system-ui, sans-serif;
             color: var(--text);
-            background: var(--light);
-            line-height: 1.6;
+            background: var(--light-bg);
+            line-height: 1.7;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
         .container {
             width: 100%;
-            max-width: 900px;
+            max-width: 880px;
             margin: 0 auto;
             padding: 0 20px;
         }
         header {
             text-align: center;
-            padding: 3rem 0 2rem;
+            padding: 4rem 0 3rem;
             background: white;
             box-shadow: var(--shadow);
         }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-        .tagline { font-size: 1.15rem; color: var(--gray); }
-        .slogan { font-size: 0.95rem; color: #777; font-weight: 600; margin-top: 0.4rem; }
-        main { flex: 1; padding: 2.5rem 0; }
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin: 2rem 0 1.5rem;
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
             color: var(--primary);
         }
-        /* Core Values - keep grid for variety */
-        .core-values ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.25rem;
+        .tagline {
+            font-size: 1.3rem;
+            color: var(--gray);
+            font-weight: 500;
         }
-        /* Specialties - simple vertical stack, one on top of the other */
-        .specialties ul {
-            display: block; /* Force vertical stacking */
+        .slogan {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 600;
+            margin-top: 0.6rem;
+            letter-spacing: 0.5px;
+        }
+        main { flex: 1; padding: 3rem 0 4rem; }
+        h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 0 0 2rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        ul {
+            list-style: none;
         }
         li {
-            background: white;
-            padding: 1.4rem;
-            margin-bottom: 1rem; /* Space between items */
-            border-radius: 10px;
+            background: var(--card-bg);
+            padding: 1.5rem 2rem;
+            margin: 1rem 0;
+            border-radius: 12px;
             box-shadow: var(--shadow);
-            transition: all 0.25s ease;
+            transition: all 0.3s ease;
             position: relative;
         }
         li:hover, li:focus-within {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+        }
+        li strong, li a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.25rem;
         }
         li a {
-            color: var(--primary);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.15rem;
             display: block;
         }
         li a:hover { color: var(--accent); }
         .details {
-            display: none;
-            margin-top: 0.8rem;
-            background: #f8f9fa;
-            padding: 0.9rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.5;
+            margin-top: 0.9rem;
             color: #444;
+            font-size: 1rem;
+            line-height: 1.6;
+            display: none;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
         }
         li:hover .details, li:focus-within .details {
             display: block;
         }
-        /* Form */
         form {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
-            max-width: 620px;
+            max-width: 640px;
             margin: 2rem auto;
         }
-        form label { display: block; margin-bottom: 0.6rem; font-weight: 500; }
+        form label {
+            display: block;
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
         form input, form textarea {
             width: 100%;
-            padding: 0.9rem;
-            margin-bottom: 1.3rem;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 1rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1.05rem;
         }
         form button {
             background: var(--primary);
             color: white;
             border: none;
-            padding: 1rem 2.5rem;
-            border-radius: 6px;
+            padding: 1.1rem 2.8rem;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 1.1rem;
             font-weight: 600;
             transition: background 0.3s;
         }
         form button:hover { background: #222; }
         .status {
-            margin-top: 1rem;
-            padding: 0.9rem;
-            border-radius: 6px;
+            margin-top: 1.2rem;
+            padding: 1rem;
+            border-radius: 8px;
             text-align: center;
+            font-weight: 500;
         }
-        .success { background: #e6ffed; color: #006400; }
+        .success { background: #e8f5e9; color: #2e7d32; }
         .error   { background: #ffebee; color: #c62828; }
         footer {
             text-align: center;
-            padding: 2rem 0;
+            padding: 3rem 0 2rem;
             color: var(--gray);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             border-top: 1px solid #eee;
+        }
+        footer p { margin: 0.4rem 0; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.3rem; }
+            form { padding: 2rem; }
         }
     </style>
 </head>
@@ -157,24 +181,37 @@
 </header>
 
 <main class="container">
-    <section class="core-values">
+    <section>
         <h2>Core Values</h2>
         <ul>
-            <li tabindex="0"><strong>Ordo (Order):</strong> Embracing innovation to set future standards.<div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div></li>
-            <li tabindex="0"><strong>Valentia (Valor):</strong> Committed to quality and artistry.<div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div></li>
-            <li tabindex="0"><strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.<div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div></li>
-            <li tabindex="0"><strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.<div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div></li>
+            <li tabindex="0">
+                <strong>Ordo (Order):</strong> Embracing innovation to set future standards.
+                <div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Valentia (Valor):</strong> Committed to quality and artistry.
+                <div class="details">We ensure our designs inspire transformation and reflect the highest artistic and technical standards.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Intelligentia (Intelligence):</strong> Integrating advanced technologies.
+                <div class="details">We bring the latest in AI and advanced technologies to create intuitive, high-impact solutions.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Artificialis (Artificial):</strong> Enhancing user experiences with AI.
+                <div class="details">Our AI-driven solutions optimize workflows and redefine how users interact with design.</div>
+            </li>
         </ul>
     </section>
 
-    <section class="specialties">
-        <h2>Our Specialties</h2>
+    <section>
+        <h2>Specialties</h2>
         <ul>
             <li><a href="specialties/machine-learning-engineering.html">Machine Learning Engineering<div class="details">Building intelligent systems that learn and adapt over time.</div></a></li>
             <li><a href="specialties/artificial-intelligence.html">Artificial Intelligence<div class="details">Leveraging AI to create innovative solutions for complex challenges.</div></a></li>
             <li><a href="specialties/data-science.html">Data Science<div class="details">Extracting valuable insights from data to guide decision-making.</div></a></li>
             <li><a href="specialties/cloud-computing.html">Cloud Computing<div class="details">Delivering scalable and flexible cloud solutions for modern businesses.</div></a></li>
             <li><a href="specialties/cybersecurity.html">Cybersecurity<div class="details">Protecting your digital assets with advanced security technologies.</div></a></li>
+            <li><a href="specialties/digital-marketing.html">Digital Marketing<div class="details">Enhancing brand visibility through data-driven marketing strategies.</div></a></li>
             <li><a href="specialties/blockchain-technology.html">Blockchain Technology<div class="details">Creating secure, decentralized systems for data and transactions.</div></a></li>
             <li><a href="specialties/ux-design.html">User Experience (UX) Design<div class="details">Designing user-centered interfaces for optimal experiences.</div></a></li>
             <li><a href="specialties/ui-design.html">User Interface (UI) Design<div class="details">Crafting intuitive, visually appealing interfaces.</div></a></li>
@@ -182,6 +219,7 @@
             <li><a href="specialties/web-development.html">Web Development<div class="details">Building responsive and dynamic websites tailored to user needs.</div></a></li>
             <li><a href="specialties/ar-development.html">Augmented Reality (AR) Development<div class="details">Creating immersive experiences that blend the physical and digital worlds.</div></a></li>
             <li><a href="specialties/vr-development.html">Virtual Reality (VR) Development<div class="details">Designing virtual worlds that captivate and engage users.</div></a></li>
+            <li><a href="specialties/graphic-design.html">Graphic Design<div class="details">Transforming ideas into visually impactful designs.</div></a></li>
             <li><a href="specialties/it-management.html">Information Technology Management<div class="details">Ensuring the seamless operation of IT infrastructure.</div></a></li>
             <li><a href="specialties/data-visualization.html">Data Visualization<div class="details">Transforming complex data into clear, actionable insights.</div></a></li>
             <li><a href="specialties/smart-device-integration.html">Smart Device Integration<div class="details">Creating interconnected systems for smarter living.</div></a></li>
@@ -191,15 +229,15 @@
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <form action="https://formspree.io/f/mannvvol" method="POST" id="contact-form">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="your@email.com">
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project..."></textarea>
+            <textarea id="message" name="message" rows="7" required placeholder="Tell us about your project or idea..."></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
 
             <div id="form-status" class="status" aria-live="polite"></div>
         </form>
@@ -207,8 +245,9 @@
 </main>
 
 <footer>
-    <p>From Concept to Creation, Forged in Innovation</p>
-    <p>@Always OVIA Studio Lab. © All Rights Reserved.</p>
+    <p>Concept to Creation, Forged in Innovation</p>
+    <p>Always Ovia Studio Lab.</p>
+    <p>© All Rights Reserved.</p>
 </footer>
 
 <script>
@@ -228,14 +267,14 @@
                 headers: { 'Accept': 'application/json' }
             });
             if (res.ok) {
-                statusEl.textContent = 'Thank you! We’ll get back to you soon.';
+                statusEl.textContent = 'Thank you for reaching out! We may get back to you soon.';
                 statusEl.className = 'status success';
                 form.reset();
             } else {
                 throw new Error();
             }
         } catch {
-            statusEl.textContent = 'Sorry, something went wrong. Please try again.';
+            statusEl.textContent = 'There was a problem submitting your form. Please try again.';
             statusEl.className = 'status error';
         }
     });
