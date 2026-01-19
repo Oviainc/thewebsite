@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OVIA Studio Lab — A design and technology studio creating tailored, exclusive AI, web, and innovative solutions. Dedicated to your satisfaction.">
-    <meta name="keywords" content="OVIA, Studio Lab, AI, Design, Technology, Web Development, Cybersecurity">
+    <meta name="description" content="OVIA Studio Lab — A design and technology studio creating tailored, exclusive solutions. For your satisfaction.">
+    <meta name="keywords" content="OVIA, Studio Lab, AI, Design, Technology, Web Development">
     <title>OVIA Studio Lab</title>
 
     <!-- Favicons -->
@@ -17,156 +17,159 @@
 
     <style>
         :root {
-            --primary: #111;
-            --text: #222;
-            --gray: #555;
-            --light-bg: #fafafa;
-            --card-bg: #ffffff;
-            --accent: #0055bb;
-            --shadow: 0 6px 20px rgba(0,0,0,0.08);
+            --bg: #f8f8f8;
+            --card: #ffffff;
+            --text: #000000;
+            --hover-bg: #000000;
+            --hover-text: #ffffff;
+            --shadow: 0 6px 24px rgba(0,0,0,0.1);
         }
-        * { box-sizing: border-box; margin:0; padding:0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
             color: var(--text);
-            background: var(--light-bg);
             line-height: 1.7;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            text-align: center;
         }
         .container {
             width: 100%;
-            max-width: 880px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
         header {
-            text-align: center;
-            padding: 4rem 0 3rem;
-            background: white;
+            padding: 5rem 0 4rem;
+            background: #fff;
             box-shadow: var(--shadow);
         }
         h1 {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             font-weight: 700;
-            margin-bottom: 0.6rem;
-            color: var(--primary);
+            margin-bottom: 0.8rem;
         }
         .tagline {
-            font-size: 1.3rem;
-            color: var(--gray);
+            font-size: 1.5rem;
             font-weight: 500;
+            color: #333;
         }
         .slogan {
-            font-size: 1rem;
-            color: #666;
+            font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 0.6rem;
-            letter-spacing: 0.5px;
+            margin-top: 0.8rem;
+            letter-spacing: 1px;
         }
-        main { flex: 1; padding: 3rem 0 4rem; }
+        main {
+            flex: 1;
+            padding: 4rem 0;
+        }
         h2 {
-            text-align: center;
-            font-size: 2.2rem;
-            margin: 0 0 2rem;
-            color: var(--primary);
+            font-size: 2.6rem;
             font-weight: 700;
+            margin-bottom: 2.5rem;
         }
         ul {
             list-style: none;
         }
         li {
-            background: var(--card-bg);
-            padding: 1.5rem 2rem;
-            margin: 1rem 0;
+            background: var(--card);
+            color: var(--text);
+            padding: 2rem;
+            margin: 1.5rem 0;
             border-radius: 12px;
             box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            position: relative;
+            transition: all 0.35s ease;
         }
-        li:hover, li:focus-within {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+        li:hover,
+        li:focus-within {
+            background: var(--hover-bg);
+            color: var(--hover-text);
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
         }
-        li strong, li a {
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 1.25rem;
-        }
-        li a {
+        li a,
+        li strong {
+            color: inherit;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 1.4rem;
             display: block;
         }
-        li a:hover { color: var(--accent); }
         .details {
-            margin-top: 0.9rem;
-            color: #444;
-            font-size: 1rem;
-            line-height: 1.6;
+            margin-top: 1.2rem;
+            font-size: 1.05rem;
+            opacity: 0.9;
             display: none;
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
         }
-        li:hover .details, li:focus-within .details {
+        li:hover .details,
+        li:focus-within .details {
             display: block;
         }
         form {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
+            background: #fff;
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
             box-shadow: var(--shadow);
-            max-width: 640px;
-            margin: 2rem auto;
+            max-width: 680px;
+            margin: 3rem auto;
         }
         form label {
             display: block;
-            margin-bottom: 0.7rem;
             font-weight: 600;
-            color: var(--primary);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
         }
-        form input, form textarea {
+        form input,
+        form textarea {
             width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #ccc;
+            padding: 1.1rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
+            text-align: center;
         }
         form button {
-            background: var(--primary);
-            color: white;
+            background: #000;
+            color: #fff;
             border: none;
-            padding: 1.1rem 2.8rem;
+            padding: 1.2rem 3rem;
             border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
+            cursor: pointer;
             transition: background 0.3s;
         }
-        form button:hover { background: #222; }
+        form button:hover {
+            background: #222;
+        }
         .status {
-            margin-top: 1.2rem;
+            margin-top: 1.5rem;
             padding: 1rem;
             border-radius: 8px;
-            text-align: center;
             font-weight: 500;
         }
-        .success { background: #e8f5e9; color: #2e7d32; }
-        .error   { background: #ffebee; color: #c62828; }
+        .success { background: #e8f5e9; color: #1b5e20; }
+        .error   { background: #ffebee; color: #b71c1c; }
         footer {
-            text-align: center;
-            padding: 3rem 0 2rem;
-            color: var(--gray);
-            font-size: 0.95rem;
-            border-top: 1px solid #eee;
+            padding: 4rem 0 3rem;
+            color: #444;
+            font-size: 1rem;
         }
-        footer p { margin: 0.4rem 0; }
+        footer p {
+            margin: 0.6rem 0;
+        }
         @media (max-width: 600px) {
-            h1 { font-size: 2.3rem; }
-            form { padding: 2rem; }
+            h1 { font-size: 2.4rem; }
+            h2 { font-size: 2rem; }
+            form { padding: 2.5rem 1.5rem; }
         }
     </style>
 </head>
@@ -176,7 +179,7 @@
     <div class="container">
         <h1>Ovia: A Studio Lab of Design</h1>
         <p class="tagline">Creating tailored, exclusive content and technology.</p>
-        <p class="slogan">#DedicatedToYourSatisfaction</p>
+        <p class="slogan">#ToYourSatisfaction</p>
     </div>
 </header>
 
@@ -235,7 +238,7 @@
             <input type="email" id="email" name="email" required placeholder="your@email.com">
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="7" required placeholder="Tell us about your project or idea..."></textarea>
+            <textarea id="message" name="message" rows="7" required placeholder="Tell us about your project..."></textarea>
 
             <button type="submit">Send</button>
 
@@ -245,8 +248,8 @@
 </main>
 
 <footer>
-    <p>Concept to Creation, Forged in Innovation</p>
-    <p>Always Ovia Studio Lab.</p>
+    <p>From Concept to Creation, Forged in Innovation</p>
+    <p>@ Always Ovia Studio Lab.</p>
     <p>© All Rights Reserved.</p>
 </footer>
 
