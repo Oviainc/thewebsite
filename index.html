@@ -36,7 +36,7 @@
         }
         .container {
             width: 100%;
-            max-width: 960px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -53,47 +53,49 @@
         h2 {
             text-align: center;
             font-size: 2rem;
-            margin-bottom: 1.5rem;
+            margin: 2rem 0 1.5rem;
             color: var(--primary);
         }
-        ul {
-            list-style: none;
+        /* Core Values - keep grid for variety */
+        .core-values ul {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.25rem;
+        }
+        /* Specialties - simple vertical stack, one on top of the other */
+        .specialties ul {
+            display: block; /* Force vertical stacking */
         }
         li {
             background: white;
-            padding: 1.25rem;
+            padding: 1.4rem;
+            margin-bottom: 1rem; /* Space between items */
             border-radius: 10px;
             box-shadow: var(--shadow);
             transition: all 0.25s ease;
             position: relative;
         }
         li:hover, li:focus-within {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.1);
         }
         li a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
+            font-size: 1.15rem;
             display: block;
         }
         li a:hover { color: var(--accent); }
         .details {
             display: none;
-            position: absolute;
-            top: 0;
-            right: -220px; /* Changed to right side for better mobile flow */
-            width: 210px;
-            background: white;
-            padding: 1rem;
+            margin-top: 0.8rem;
+            background: #f8f9fa;
+            padding: 0.9rem;
             border-radius: 8px;
-            box-shadow: var(--shadow);
-            font-size: 0.92rem;
-            z-index: 10;
-            border: 1px solid #eee;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #444;
         }
         li:hover .details, li:focus-within .details {
             display: block;
@@ -142,10 +144,6 @@
             font-size: 0.9rem;
             border-top: 1px solid #eee;
         }
-        @media (max-width: 768px) {
-            .details { right: auto; left: 0; top: 100%; width: 100%; margin-top: 8px; }
-            ul { grid-template-columns: 1fr; }
-        }
     </style>
 </head>
 <body>
@@ -159,7 +157,7 @@
 </header>
 
 <main class="container">
-    <section>
+    <section class="core-values">
         <h2>Core Values</h2>
         <ul>
             <li tabindex="0"><strong>Ordo (Order):</strong> Embracing innovation to set future standards.<div class="details">We craft elegant designs and technologies that pave the way for tomorrow's standards.</div></li>
@@ -169,8 +167,8 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Our Specialties (6+ Quality)</h2>
+    <section class="specialties">
+        <h2>Our Specialties</h2>
         <ul>
             <li><a href="specialties/machine-learning-engineering.html">Machine Learning Engineering<div class="details">Building intelligent systems that learn and adapt over time.</div></a></li>
             <li><a href="specialties/artificial-intelligence.html">Artificial Intelligence<div class="details">Leveraging AI to create innovative solutions for complex challenges.</div></a></li>
@@ -209,8 +207,8 @@
 </main>
 
 <footer>
-    <p>Concept to Creation, Forged in Innovation</p>
-    <p>Always OVIA Studio Lab. © All Rights Reserved.</p>
+    <p>From Concept to Creation, Forged in Innovation</p>
+    <p>@Always OVIA Studio Lab. © All Rights Reserved.</p>
 </footer>
 
 <script>
