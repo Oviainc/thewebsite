@@ -1,0 +1,77 @@
+/* OVIA Inc Studio Lab — shared stylesheet for thewebsite specialty pages.
+   Single file, no external fonts, no frameworks. Black and white. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.65;
+}
+
+/* Site nav (injected on every page) */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 0.9rem 1.25rem;
+}
+.site-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+.site-nav a:hover { text-decoration: underline; }
+.site-brand { letter-spacing: 0.02em; }
+.site-nav-links { display: flex; gap: 1.25rem; }
+
+/* Page header / hero */
+header {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+header p { color: #fff; }
+.header-content { max-width: 55rem; margin: 0 auto; }
+
+/* Content */
+main { max-width: 55rem; margin: 0 auto; padding: 2.5rem 1.25rem; }
+section { margin-bottom: 1rem; }
+
+h1, h2, h3 { line-height: 1.2; font-weight: 700; }
+h1 { font-size: 2.6rem; margin: 0 0 0.75rem; }
+h2 { font-size: 1.9rem; margin: 2.25rem 0 1rem; }
+h3 { font-size: 1.35rem; margin: 1.75rem 0 0.75rem; }
+
+p { font-size: 1.05rem; margin: 0 0 1.25rem; }
+ul { padding-left: 1.25rem; margin: 0 0 1.75rem; }
+li { margin-bottom: 0.6rem; }
+
+a { color: #000; font-weight: 600; }
+a:hover { color: #333; }
+.highlight, strong { font-weight: 700; color: #000; }
+
+img { max-width: 100%; height: auto; }
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  margin-top: 3rem;
+}
+footer a { color: #fff; }
+.site-contact a { text-decoration: underline; }
+.site-tag { letter-spacing: 0.05em; font-weight: 600; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.55rem; }
+  main { padding: 1.75rem 1rem; }
+  header { padding: 2.25rem 1rem; }
+}
