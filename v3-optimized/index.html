@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.mymemory.translated.net; object-src 'none'; base-uri 'self'">
+<link rel="canonical" href="https://oviainc.github.io/thewebsite/v3-optimized/">
+<link rel="icon" type="image/png" href="assets/ovia-inc-favicon.png">
+<meta name="theme-color" content="#000000">
+
+<title>OVIA Inc Studio Lab v3 | Design Studio &amp; Technology Lab</title>
+<meta name="description" content="OVIA Inc Studio Lab v3 — the optimized black-and-white studio lab: a design studio and a technology lab crafting AI, data, design and technology, available in any language.">
+<meta name="author" content="Ovia Inc">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OVIA Inc Studio Lab">
+<meta property="og:url" content="https://oviainc.github.io/thewebsite/v3-optimized/">
+<meta property="og:title" content="OVIA Inc Studio Lab v3 | Design Studio &amp; Technology Lab">
+<meta property="og:description" content="OVIA Inc Studio Lab v3 — the optimized black-and-white studio lab: a design studio and a technology lab crafting AI, data, design and technology, available in any language.">
+<meta property="og:image" content="https://oviainc.github.io/thewebsite/v3-optimized/assets/ovia-inc-logo-white.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OVIA Inc Studio Lab v3 | Design Studio &amp; Technology Lab">
+<meta name="twitter:description" content="OVIA Inc Studio Lab v3 — the optimized black-and-white studio lab: a design studio and a technology lab crafting AI, data, design and technology, available in any language.">
+<meta name="twitter:image" content="https://oviainc.github.io/thewebsite/v3-optimized/assets/ovia-inc-logo-white.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OVIA Inc",
+  "alternateName": "OVIA Inc Studio Lab",
+  "url": "https://oviainc.github.io/thewebsite/v3-optimized/",
+  "logo": "https://oviainc.github.io/thewebsite/v3-optimized/assets/ovia-inc-logo-white.png",
+  "description": "A tailored studio lab of design and technology, crafting unique content and technologies that reflect the true essence of our clients' values.",
+  "sameAs": ["https://www.linkedin.com/company/ovia-inc-studio-labs/"]
+}
+</script>
+
+<style>
+  :root{ --bg:#000; --panel:#0d0d0d; --text:#fff; --muted:#bdbdbd; --line:#2b2b2b; --max:68rem; }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--text)}
+  a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+  .skip{position:absolute;left:-9999px;top:0;background:#fff;color:#000;padding:.5rem 1rem}
+  .skip:focus{left:0}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+  header{padding:3.5rem 0 3rem;text-align:left}
+  .logo{width:11rem;max-width:55vw;height:auto;display:block;margin-bottom:1.75rem}
+  .headrow{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+  .version{display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:.15rem .7rem;color:var(--muted);font-size:.85rem;letter-spacing:.04em}
+  .lang-auto{font-size:.8rem;font-weight:600;letter-spacing:.1em;color:var(--muted);white-space:nowrap;
+    display:inline-flex;align-items:center;gap:.5rem}
+  .lang-auto label{text-transform:uppercase}
+  .lang-auto select{font:inherit;color:var(--text);background:#000;border:1px solid var(--line);
+    border-radius:0;padding:.3rem .4rem;max-width:10rem;cursor:pointer}
+  .lang-auto select:focus{outline:2px solid #fff;outline-offset:1px}
+  h1{font-size:clamp(2.4rem,6.5vw,4rem);line-height:1.05;margin:1rem 0 .75rem;letter-spacing:-.02em}
+  h2{font-size:clamp(1.6rem,3.5vw,2.1rem);line-height:1.2;margin:0 0 1rem;letter-spacing:-.01em}
+  h3{margin:.2rem 0 .4rem;font-size:1.15rem}
+  .kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;color:var(--muted);margin:0 0 .5rem}
+  .lede{font-size:1.15rem;color:var(--muted);max-width:44rem;margin:0 0 1.75rem}
+  .cta{display:inline-block;border:1px solid #fff;color:#fff;padding:.7rem 1.4rem;border-radius:999px;text-decoration:none;font-weight:600}
+  .cta:hover{background:#fff;color:#000}
+  nav{border-block:1px solid var(--line);padding:.8rem 0;margin-bottom:3rem}
+  nav ul{display:flex;flex-wrap:wrap;gap:1.25rem;list-style:none;margin:0;padding:0}
+  nav a{text-decoration:none}
+  nav a:hover{text-decoration:underline}
+  section{padding:0 0 3.5rem}
+  .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:1rem;padding:1.25rem}
+  .card p{color:var(--muted);margin:0}
+  .card ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)}
+  .card li{margin:.45rem 0}
+  .card li strong{color:var(--text);font-weight:600}
+  .feather-band{border-block:1px solid var(--line);padding:1.5rem 0;margin-bottom:3.5rem;text-align:center}
+  .logo-band{border-block:1px solid var(--line);padding:3rem 0;margin-bottom:3.5rem;text-align:center}
+  .logo-band img{width:22rem;max-width:80vw;height:auto}
+  footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+  footer .tag{color:var(--text);letter-spacing:.04em}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="wrap">
+  <header>
+    <img class="logo" src="assets/ovia-inc-logo-white.png" data-i18n-aria="logoAlt" alt="Ovia Inc — Studio Lab logo" width="960" height="737">
+    <div class="headrow">
+      <span class="version" data-i18n="versionTag">Version 3 · Optimized</span>
+      <div class="lang-auto">
+        <label for="langPick" data-i18n="langLabel">Language</label>
+        <select id="langPick" aria-label="Choose your language">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="nl">Nederlands</option>
+            <option value="sv">Svenska</option>
+            <option value="nb">Norsk</option>
+            <option value="da">Dansk</option>
+            <option value="fi">Suomi</option>
+            <option value="pl">Polski</option>
+            <option value="cs">Čeština</option>
+            <option value="sk">Slovenčina</option>
+            <option value="sl">Slovenščina</option>
+            <option value="hr">Hrvatski</option>
+            <option value="sr">Srpski</option>
+            <option value="uk">Українська</option>
+            <option value="ru">Русский</option>
+            <option value="bg">Български</option>
+            <option value="el">Ελληνικά</option>
+            <option value="tr">Türkçe</option>
+            <option value="ro">Română</option>
+            <option value="hu">Magyar</option>
+            <option value="et">Eesti</option>
+            <option value="lv">Latviešu</option>
+            <option value="lt">Lietuvių</option>
+            <option value="ga">Gaeilge</option>
+            <option value="cy">Cymraeg</option>
+            <option value="is">Íslenska</option>
+            <option value="ca">Català</option>
+            <option value="eu">Euskara</option>
+            <option value="gl">Galego</option>
+            <option value="sq">Shqip</option>
+            <option value="mk">Македонски</option>
+            <option value="az">Azərbaycan</option>
+            <option value="ka">ქართული</option>
+            <option value="hy">Հայերեն</option>
+            <option value="kk">Қазақша</option>
+            <option value="uz">Oʻzbek</option>
+            <option value="ar">العربية</option>
+            <option value="he">עברית</option>
+            <option value="fa">فارسی</option>
+            <option value="ur">اردو</option>
+            <option value="hi">हिन्दी</option>
+            <option value="bn">বাংলা</option>
+            <option value="pa">ਪੰਜਾਬੀ</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="ml">മലയാളം</option>
+            <option value="mr">मराठी</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ne">नेपाली</option>
+            <option value="si">සිංහල</option>
+            <option value="th">ไทย</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="ms">Bahasa Melayu</option>
+            <option value="fil">Filipino</option>
+            <option value="zh-CN">中文 (简体)</option>
+            <option value="zh-TW">中文 (繁體)</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="sw">Kiswahili</option>
+            <option value="am">አማርኛ</option>
+            <option value="ha">Hausa</option>
+            <option value="yo">Yorùbá</option>
+            <option value="ig">Igbo</option>
+            <option value="zu">IsiZulu</option>
+            <option value="af">Afrikaans</option>
+            <option value="my">မြန်မာ</option>
+            <option value="km">ខ្មែរ</option>
+            <option value="lo">ລາວ</option>
+            <option value="mn">Монгол</option>
+          </select>
+      </div>
+    </div>
+    <h1>OVIA Inc Studio Lab</h1>
+    <p class="lede" data-i18n="lede">A tailored studio lab of design and technology. In the studio, we craft. In the lab, we build and test. Together they spark progress, elevate creativity, and turn state-of-the-art advancements into unique, groundbreaking work that reflects the true essence of our clients' values.</p>
+    <a class="cta" href="https://www.linkedin.com/company/ovia-inc-studio-labs/" target="_blank" rel="noopener" data-i18n="ctaContact">Contact</a>
+  </header>
+
+  <nav aria-label="On this page">
+    <ul>
+      <li><a href="#studio" data-i18n="navStudio">The Studio</a></li>
+      <li><a href="#lab" data-i18n="navLab">The Lab</a></li>
+      <li><a href="#how" data-i18n="navHow">How We Work</a></li>
+      <li><a href="#values" data-i18n="navValues">Core Values</a></li>
+      <li><a href="https://www.linkedin.com/company/ovia-inc-studio-labs/" target="_blank" rel="noopener" data-i18n="navContact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section id="studio" aria-labelledby="studio-title">
+      <p class="kicker" data-i18n="studioKicker">The Studio</p>
+      <h2 id="studio-title" data-i18n="studioH2">Design, crafted by hand and eye</h2>
+      <p class="lede" data-i18n="studioLede">The studio is where brands, products and experiences take shape — useful, desirable, and made to be remembered.</p>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="cardDE">Design &amp; Experience</h3>
+          <ul>
+            <li data-i18n-html="itemUx"></li>
+            <li data-i18n-html="itemUi"></li>
+            <li data-i18n-html="itemProduct"></li>
+            <li data-i18n-html="itemGraphic"></li>
+            <li data-i18n-html="itemService"></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="cardSP">Strategy &amp; Presence</h3>
+          <ul>
+            <li data-i18n-html="itemCreative"></li>
+            <li data-i18n-html="itemMarketing"></li>
+            <li data-i18n-html="itemSustainable"></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="lab" aria-labelledby="lab-title">
+      <p class="kicker" data-i18n="labKicker">The Lab</p>
+      <h2 id="lab-title" data-i18n="labH2">Technology, tested until it works</h2>
+      <p class="lede" data-i18n="labLede">The lab is where ideas meet proof — advanced technologies integrated, tried, and refined until they solve real problems.</p>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="cardAi">AI &amp; Data</h3>
+          <ul>
+            <li data-i18n-html="itemMl"></li>
+            <li data-i18n-html="itemAi"></li>
+            <li data-i18n-html="itemDs"></li>
+            <li data-i18n-html="itemDv"></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="cardBuild">Build &amp; Immersion</h3>
+          <ul>
+            <li data-i18n-html="itemWeb"></li>
+            <li data-i18n-html="itemAr"></li>
+            <li data-i18n-html="itemVr"></li>
+            <li data-i18n-html="itemSmart"></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="cardInfra">Infrastructure &amp; Security</h3>
+          <ul>
+            <li data-i18n-html="itemCloud"></li>
+            <li data-i18n-html="itemCyber"></li>
+            <li data-i18n-html="itemChain"></li>
+            <li data-i18n-html="itemIt"></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-title">
+      <p class="kicker" data-i18n="howKicker">Studio + Lab</p>
+      <h2 id="how-title" data-i18n="howH2">How we work</h2>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="how1t">1. Start from values</h3>
+          <p data-i18n="how1p">Every project begins with what a client stands for — the work has to reflect it.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="how2t">2. Craft in the studio</h3>
+          <p data-i18n="how2p">Design first: the look, the feel, and the experience people will actually have.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="how3t">3. Prove it in the lab</h3>
+          <p data-i18n="how3p">Then the technology is built, integrated, and tested against real problems — not demos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="values" aria-labelledby="values-title">
+      <h2 id="values-title" data-i18n="valuesH2">Core Values</h2>
+      <div class="grid">
+        <article class="card"><h3 data-i18n="val1t">Ordo (Order)</h3><p data-i18n="val1p">Embracing innovation to set future standards.</p></article>
+        <article class="card"><h3 data-i18n="val2t">Valentia (Valor)</h3><p data-i18n="val2p">Committed to quality and artistry.</p></article>
+        <article class="card"><h3 data-i18n="val3t">Intelligentia (Intelligence)</h3><p data-i18n="val3p">Integrating advanced technologies.</p></article>
+        <article class="card"><h3 data-i18n="val4t">Artificialis (Artificial)</h3><p data-i18n="val4p">Enhancing user experiences with AI.</p></article>
+      </div>
+    </section>
+
+    <div class="feather-band" aria-label="Feather pattern"><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:1;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:0.72;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:0.45;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:0.72;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:1;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg><svg width="68" height="102" viewBox="0 0 68 102" role="img" aria-label="Feather" style="opacity:0.55;margin:0 1.1rem"><polygon points="34,0 60,16 68,45 49,80 37,88 31,88 19,80 0,45 8,16" fill="#fff"/><rect x="32.5" y="6" width="3" height="96" fill="#000"/><line x1="34" y1="25" x2="62" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="64" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="60" y2="47" stroke="#000" stroke-width="3"/><line x1="34" y1="25" x2="6" y2="15" stroke="#000" stroke-width="3"/><line x1="34" y1="41" x2="4" y2="31" stroke="#000" stroke-width="3"/><line x1="34" y1="57" x2="8" y2="47" stroke="#000" stroke-width="3"/><rect x="32.5" y="88" width="3" height="14" fill="#fff"/></svg></div>
+    <div class="logo-band">
+      <img src="assets/ovia-inc-logo-white.png" data-i18n-aria="logoAlt" alt="Ovia Inc — Studio Lab logo" width="960" height="737" loading="lazy">
+    </div>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="contactH2">Contact</h2>
+      <p class="lede" data-i18n="contactLede">For inquiries, please reach out on LinkedIn — we look forward to inspiring creativity and excellence through innovative design.</p>
+      <a class="cta" href="https://www.linkedin.com/company/ovia-inc-studio-labs/" target="_blank" rel="noopener" data-i18n="contactBtn">Contact us on LinkedIn</a>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footerLine">OVIA Inc Studio Lab v3 · Black &amp; white · One page, one URL: just the site.</p>
+    <p class="tag" data-i18n="footerTag">#toyoursatisfaction</p>
+  </footer>
+</div>
+
+<script>
+"use strict";
+
+/* ============ One written language: English ============
+   Same mechanism as the OVIA Inc ai-services homepage: the page is
+   authored in English only. On load the visitor's browser language
+   is detected and, when it is not English, the English source is
+   translated automatically (on-device where the browser supports
+   it, otherwise via a translation service), so the page displays
+   in the visitor's own language. The chooser in the header lets
+   the visitor pick any language at any time; it defaults to the
+   browser's language. English is the fallback. */
+var SOURCE = {
+    metaTitle: "OVIA Inc Studio Lab v3 | Design Studio & Technology Lab",
+    metaDesc: "OVIA Inc Studio Lab v3 — the optimized black-and-white studio lab: a design studio and a technology lab crafting AI, data, design and technology, available in any language.",
+    langLabel: "Language",
+    skip: "Skip to content",
+    versionTag: "Version 3 · Optimized",
+    lede: "A tailored studio lab of design and technology. In the studio, we craft. In the lab, we build and test. Together they spark progress, elevate creativity, and turn state-of-the-art advancements into unique, groundbreaking work that reflects the true essence of our clients' values.",
+    ctaContact: "Contact",
+    navStudio: "The Studio",
+    navLab: "The Lab",
+    navHow: "How We Work",
+    navValues: "Core Values",
+    navContact: "Contact",
+    studioKicker: "The Studio",
+    studioH2: "Design, crafted by hand and eye",
+    studioLede: "The studio is where brands, products and experiences take shape — useful, desirable, and made to be remembered.",
+    cardDE: "Design & Experience",
+    itemUx: "<strong>User Experience (UX) Design</strong> — Interfaces people love to use.",
+    itemUi: "<strong>User Interface (UI) Design</strong> — Beautiful, easy-to-use screens.",
+    itemProduct: "<strong>Product Design</strong> — Products that are useful & desirable.",
+    itemGraphic: "<strong>Graphic Design</strong> — Visuals that make strong impressions.",
+    itemService: "<strong>Service Design</strong> — Complete experiences customers remember.",
+    cardSP: "Strategy & Presence",
+    itemCreative: "<strong>Creative Strategy</strong> — Innovative strategies that resonate with audiences.",
+    itemMarketing: "<strong>Digital Marketing</strong> — More customers through smart online presence.",
+    itemSustainable: "<strong>Sustainable Design</strong> — Eco-friendly design without compromise.",
+    labKicker: "The Lab",
+    labH2: "Technology, tested until it works",
+    labLede: "The lab is where ideas meet proof — advanced technologies integrated, tried, and refined until they solve real problems.",
+    cardAi: "AI & Data",
+    itemMl: "<strong>Machine Learning Engineering</strong> — Systems that learn and improve automatically.",
+    itemAi: "<strong>Artificial Intelligence</strong> — AI that solves real business problems.",
+    itemDs: "<strong>Data Science</strong> — Clear insights from your data.",
+    itemDv: "<strong>Data Visualization</strong> — Complex data made instantly understandable.",
+    cardBuild: "Build & Immersion",
+    itemWeb: "<strong>Web Development</strong> — Fast, modern websites that perform.",
+    itemAr: "<strong>Augmented Reality (AR)</strong> — Real-world + digital experiences.",
+    itemVr: "<strong>Virtual Reality (VR)</strong> — Fully immersive worlds.",
+    itemSmart: "<strong>Smart Device Integration</strong> — Devices that work together intelligently.",
+    cardInfra: "Infrastructure & Security",
+    itemCloud: "<strong>Cloud Computing</strong> — Scalable, cost-effective infrastructure.",
+    itemCyber: "<strong>Cybersecurity</strong> — Real protection against today's threats.",
+    itemChain: "<strong>Blockchain Technology</strong> — Secure, transparent digital transactions.",
+    itemIt: "<strong>IT Management</strong> — Reliable IT that just works.",
+    howKicker: "Studio + Lab",
+    howH2: "How we work",
+    how1t: "1. Start from values",
+    how1p: "Every project begins with what a client stands for — the work has to reflect it.",
+    how2t: "2. Craft in the studio",
+    how2p: "Design first: the look, the feel, and the experience people will actually have.",
+    how3t: "3. Prove it in the lab",
+    how3p: "Then the technology is built, integrated, and tested against real problems — not demos.",
+    valuesH2: "Core Values",
+    val1t: "Ordo (Order)",
+    val1p: "Embracing innovation to set future standards.",
+    val2t: "Valentia (Valor)",
+    val2p: "Committed to quality and artistry.",
+    val3t: "Intelligentia (Intelligence)",
+    val3p: "Integrating advanced technologies.",
+    val4t: "Artificialis (Artificial)",
+    val4p: "Enhancing user experiences with AI.",
+    contactH2: "Contact",
+    contactLede: "For inquiries, please reach out on LinkedIn — we look forward to inspiring creativity and excellence through innovative design.",
+    contactBtn: "Contact us on LinkedIn",
+    featherAria: "A row of angular feather shapes",
+    logoAlt: "Ovia Inc — Studio Lab logo",
+    footerLine: "OVIA Inc Studio Lab v3 · Black & white · One page, one URL: just the site.",
+    footerTag: "#toyoursatisfaction"
+  };
+
+var currentStrings = {};
+      Object.keys(SOURCE).forEach(function (k) { currentStrings[k] = SOURCE[k]; });
+      var pendingOffer = null;
+      var displayLang = "en";
+
+      function applyKey(k, val) {
+        if (k === "metaTitle") { document.title = val; return; }
+        if (k === "metaDesc") {
+          var md = document.querySelector('meta[name="description"]');
+          if (md) md.setAttribute("content", val);
+          return;
+        }
+        document.querySelectorAll('[data-i18n="' + k + '"]').forEach(function (el) { el.textContent = val; });
+        document.querySelectorAll('[data-i18n-html="' + k + '"]').forEach(function (el) { el.innerHTML = val; });
+        document.querySelectorAll('[data-i18n-aria="' + k + '"]').forEach(function (el) {
+          if (el.tagName === "IMG") el.setAttribute("alt", val);
+          else el.setAttribute("aria-label", val);
+        });
+        document.querySelectorAll('[data-i18n-ph="' + k + '"]').forEach(function (el) { el.setAttribute("placeholder", val); });
+        if (k === "formDone") {
+          var done = document.getElementById("formDone");
+          if (done && done.classList.contains("show")) done.textContent = val;
+        }
+      }
+
+      function applySource() {
+        document.documentElement.lang = "en";
+        Object.keys(SOURCE).forEach(function (k) { currentStrings[k] = SOURCE[k]; applyKey(k, SOURCE[k]); });
+      }
+
+      function setLangChip(code) {
+        var sel = document.getElementById("langPick");
+        if (!sel) return;
+        var has = false;
+        for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === code) has = true;
+        if (!has) {
+          var opt = document.createElement("option");
+          opt.value = code; opt.textContent = langName(code);
+          sel.appendChild(opt);
+        }
+        sel.value = code;
+      }
+
+      function langName(code) {
+        try {
+          var n = new Intl.DisplayNames(["en"], { type: "language" }).of(code);
+          return n ? n.charAt(0).toUpperCase() + n.slice(1) : code;
+        } catch (e) { return code; }
+      }
+
+      function normalizeLang(raw) {
+        if (!raw) return null;
+        var c = String(raw).trim().replace("_", "-");
+        if (!c) return null;
+        var low = c.toLowerCase();
+        if (low.indexOf("zh") === 0) return (low.indexOf("tw") > -1 || low.indexOf("hk") > -1) ? "zh-TW" : "zh-CN";
+        if (low.indexOf("pt") === 0) return low.indexOf("br") > -1 ? "pt-BR" : "pt";
+        return low.split("-")[0];
+      }
+
+      /* The visitor's preferred language: an explicit ?lang= in the address
+         wins (handy for testing), otherwise the browser's own language
+         list, in the order the visitor set it. */
+      function detectTargetLang() {
+        var candidates = [];
+        try {
+          var q = new URLSearchParams(location.search).get("lang");
+          if (q) candidates.push(q);
+        } catch (e) {}
+        if (navigator.languages && navigator.languages.length) candidates = candidates.concat(navigator.languages);
+        if (navigator.language) candidates.push(navigator.language);
+        for (var i = 0; i < candidates.length; i++) {
+          var c = normalizeLang(candidates[i]);
+          if (c) return c;
+        }
+        return "en";
+      }
+
+      /* ---------- Automatic translation of the English source ---------- */
+      var translationCache = new Map();
+      var deviceTranslator = null;
+
+      function createDeviceTranslator(target) {
+        var spec = { sourceLanguage: "en", targetLanguage: target };
+        var attempt = null;
+        try {
+          if ("Translator" in self && typeof Translator.create === "function") {
+            attempt = (Translator.availability ? Translator.availability(spec) : Promise.resolve("available"))
+              .then(function (a) { return a === "unavailable" ? null : Translator.create(spec); });
+          } else if (self.translation && typeof self.translation.createTranslator === "function") {
+            attempt = self.translation.createTranslator(spec);
+          }
+        } catch (e) { attempt = null; }
+        if (!attempt) return Promise.resolve(null);
+        return attempt.then(function (t) { return t || null; }).catch(function () { return null; });
+      }
+
+      function webLangCode(target) {
+        if (target === "zh") return "zh-CN";
+        return target;
+      }
+
+      function translateViaWeb(text, target) {
+        var url = "https://api.mymemory.translated.net/get?q=" + encodeURIComponent(text) +
+                  "&langpair=" + encodeURIComponent("en|" + webLangCode(target));
+        return fetch(url).then(function (res) {
+          if (!res.ok) throw new Error("translation http " + res.status);
+          return res.json();
+        }).then(function (data) {
+          var out = data && data.responseData && data.responseData.translatedText;
+          if (!out || /MYMEMORY WARNING|QUERY LENGTH LIMIT|INVALID SOURCE|INVALID TARGET/i.test(out)) {
+            throw new Error("translation unavailable");
+          }
+          // Clean up machine-translation artifacts: placeholder tags some
+          // matches wrap around the text, and HTML entities.
+          out = out.replace(/<\/?g[^>]*>/gi, "");
+          if (out.charAt(0) === "[" && out.charAt(out.length - 1) === "]" && text.charAt(0) !== "[") {
+            out = out.slice(1, -1);
+          }
+          var decoder = document.createElement("textarea");
+          decoder.innerHTML = out;
+          return decoder.value;
+        });
+      }
+
+      function translateChunk(text, target) {
+        if (!text || !text.trim()) return Promise.resolve(text);
+        var cacheKey = target + "\u0001" + text;
+        if (translationCache.has(cacheKey)) return Promise.resolve(translationCache.get(cacheKey));
+        var job = deviceTranslator
+          ? deviceTranslator.translate(text).catch(function () { deviceTranslator = null; return translateViaWeb(text, target); })
+          : translateViaWeb(text, target);
+        return job.then(function (out) {
+          translationCache.set(cacheKey, out);
+          return out;
+        });
+      }
+
+      function translateText(text, target) {
+        if (text.length <= 420) return translateChunk(text, target);
+        var chunks = [];
+        var rest = text;
+        while (rest.length > 420) {
+          var cut = rest.lastIndexOf(". ", 420);
+          if (cut < 120) cut = rest.lastIndexOf(" ", 420);
+          if (cut < 120) cut = 420;
+          chunks.push(rest.slice(0, cut + 1).trim());
+          rest = rest.slice(cut + 1).trim();
+        }
+        if (rest) chunks.push(rest);
+        return chunks.reduce(function (chain, chunk) {
+          return chain.then(function (acc) {
+            return translateChunk(chunk, target).then(function (t) { acc.push(t); return acc; });
+          });
+        }, Promise.resolve([])).then(function (parts) { return parts.join(" "); });
+      }
+
+      function translateHtml(html, target) {
+        var parts = html.split(/(<strong>.*?<\/strong>)/g);
+        return parts.reduce(function (chain, part) {
+          return chain.then(function (acc) {
+            if (!part) return acc;
+            if (part.indexOf("<strong>") === 0) {
+              var inner = part.replace(/^<strong>/, "").replace(/<\/strong>$/, "");
+              return translateText(inner, target).then(function (t) { acc.push("<strong>" + t + "<\/strong>"); return acc; });
+            }
+            return translateText(part, target).then(function (t) { acc.push(t); return acc; });
+          });
+        }, Promise.resolve([])).then(function (done) { return done.join(""); });
+      }
+
+      function usedKeys() {
+        var set = { metaTitle: true, metaDesc: true, formDone: true, formError: true };
+        ["data-i18n", "data-i18n-html", "data-i18n-aria", "data-i18n-ph"].forEach(function (attr) {
+          document.querySelectorAll("[" + attr + "]").forEach(function (el) { set[el.getAttribute(attr)] = true; });
+        });
+        return Object.keys(set).filter(function (k) { return SOURCE[k] != null; });
+      }
+
+      function autoTranslate(target) {
+        displayLang = target;
+        setLangChip(target);
+        Object.keys(SOURCE).forEach(function (k) { currentStrings[k] = SOURCE[k]; });
+        applySource();
+        return createDeviceTranslator(target).then(function (t) {
+          deviceTranslator = t;
+          var keys = usedKeys();
+          var index = 0;
+          var translatedAny = false;
+          function worker() {
+            if (index >= keys.length) return Promise.resolve();
+            var k = keys[index++];
+            var srcText = SOURCE[k];
+            var job = srcText.indexOf("<") > -1 ? translateHtml(srcText, target) : translateText(srcText, target);
+            return job.then(function (out) {
+              if (out && out !== srcText) {
+                currentStrings[k] = out;
+                translatedAny = true;
+                applyKey(k, out);
+              }
+            }).catch(function () { /* keep the English source for this string */ })
+              .then(worker);
+          }
+          var workers = [];
+          for (var w = 0; w < 4; w++) workers.push(worker());
+          return Promise.all(workers).then(function () {
+            if (translatedAny) document.documentElement.lang = target;
+          });
+        });
+      }
+
+/* ============ Init: English source, automatic display language ============ */
+applySource();
+var targetLang = detectTargetLang();
+setLangChip(targetLang);
+if (targetLang !== "en") {
+  autoTranslate(targetLang);
+}
+
+/* Language chooser: the visitor can pick any language at any time.
+   Choosing a language re-runs the same automatic translation. */
+var langPick = document.getElementById("langPick");
+if (langPick) {
+  langPick.addEventListener("change", function () {
+    var code = langPick.value;
+    deviceTranslator = null;
+    if (code === "en") {
+      displayLang = "en";
+      applySource();
+    } else {
+      autoTranslate(code);
+    }
+  });
+}
+</script>
+</body>
+</html>
