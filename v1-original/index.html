@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OVIA Studio Lab — A design and technology studio creating tailored, exclusive solutions. Dedicated to your satisfaction.">
+    <meta name="keywords" content="OVIA, Studio Lab, AI, Design, Technology, Web Development">
+    <title>OVIA Inc Studio Lab v1 — Original</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f8f8f8;
+            --card: #ffffff;
+            --text: #000000;
+            --hover-bg: #000000;
+            --hover-text: #ffffff;
+            --shadow: 0 6px 24px rgba(0,0,0,0.1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 5rem 0 4rem;
+            background: #fff;
+            box-shadow: var(--shadow);
+        }
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        .slogan {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.8rem;
+            letter-spacing: 1px;
+        }
+        main {
+            flex: 1;
+            padding: 4rem 0;
+        }
+        h2 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            background: var(--card);
+            color: var(--text);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.35s ease;
+            cursor: pointer;
+        }
+        li:hover,
+        li:focus-within {
+            background: var(--hover-bg);
+            color: var(--hover-text);
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+        }
+        li strong,
+        li a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.4rem;
+            display: block;
+        }
+        .details {
+            margin-top: 1.2rem;
+            font-size: 1.05rem;
+            opacity: 0.9;
+            display: none;
+        }
+        li:hover .details,
+        li:focus-within .details {
+            display: block;
+        }
+        form {
+            background: #fff;
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            max-width: 680px;
+            margin: 3rem auto;
+        }
+        form label {
+            display: block;
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 1.1rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        form button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 1.2rem 3rem;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: #222;
+        }
+        .status {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .success { background: #e8f5e9; color: #1b5e20; }
+        .error { background: #ffebee; color: #b71c1c; }
+        footer {
+            padding: 4rem 0 3rem;
+            color: #444;
+            font-size: 1rem;
+        }
+        footer p {
+            margin: 0.6rem 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.4rem; }
+            h2 { font-size: 2rem; }
+            form { padding: 2.5rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Ovia Inc: A Studio Lab of Design</h1>
+        <p class="tagline">Creating tailored, exclusive content and technology.</p>
+        <p class="slogan">#DedicatedToYourSatisfaction</p>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2>Core Values</h2>
+        <ul>
+            <li tabindex="0">
+                <strong>Ordo (Order)</strong>
+                <div class="details">Embracing innovation to set future standards.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Valentia (Valor)</strong>
+                <div class="details">Committed to quality and artistry.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Intelligentia (Intelligence)</strong>
+                <div class="details">Integrating advanced technologies.</div>
+            </li>
+            <li tabindex="0">
+                <strong>Artificialis (Artificial)</strong>
+                <div class="details">Enhancing user experiences with AI.</div>
+            </li>
+        </ul>
+    </section>
+
+   <section>
+  <h2>Our Expertise</h2>
+  
+  <h3>AI & Data</h3>
+  <ul>
+    <li><a href="specialties/machine-learning-engineering.html">Machine Learning Engineering<div class="details">Systems that learn and improve automatically.</div></a></li>
+    <li><a href="specialties/artificial-intelligence.html">Artificial Intelligence<div class="details">AI that solves real business problems.</div></a></li>
+    <li><a href="specialties/data-science.html">Data Science<div class="details">Clear insights from your data.</div></a></li>
+    <li><a href="specialties/data-visualization.html">Data Visualization<div class="details">Complex data made instantly understandable.</div></a></li>
+  </ul>
+
+  <h3>Design & Experience</h3>
+  <ul>
+    <li><a href="specialties/ux-design.html">User Experience (UX) Design<div class="details">Interfaces people love to use.</div></a></li>
+    <li><a href="specialties/ui-design.html">User Interface (UI) Design<div class="details">Beautiful, easy-to-use screens.</div></a></li>
+    <li><a href="specialties/product-design.html">Product Design<div class="details">Products that are useful & desirable.</div></a></li>
+    <li><a href="specialties/graphic-design.html">Graphic Design<div class="details">Visuals that make strong impressions.</div></a></li>
+    <li><a href="specialties/service-design.html">Service Design<div class="details">Complete experiences customers remember.</div></a></li>
+  </ul>
+
+  <h3>Development & Tech</h3>
+  <ul>
+    <li><a href="specialties/web-development.html">Web Development<div class="details">Fast, modern websites that perform.</div></a></li>
+    <li><a href="specialties/ar-development.html">Augmented Reality (AR)<div class="details">Real-world + digital experiences.</div></a></li>
+    <li><a href="specialties/vr-development.html">Virtual Reality (VR)<div class="details">Fully immersive worlds.</div></a></li>
+    <li><a href="specialties/smart-device-integration.html">Smart Device Integration<div class="details">Devices that work together intelligently.</div></a></li>
+  </ul>
+
+  <h3>Infrastructure & Security</h3>
+  <ul>
+    <li><a href="specialties/cloud-computing.html">Cloud Computing<div class="details">Scalable, cost-effective infrastructure.</div></a></li>
+    <li><a href="specialties/cybersecurity.html">Cybersecurity<div class="details">Real protection against today's threats.</div></a></li>
+    <li><a href="specialties/blockchain-technology.html">Blockchain Technology<div class="details">Secure, transparent digital transactions.</div></a></li>
+    <li><a href="specialties/it-management.html">IT Management<div class="details">Reliable IT that just works.</div></a></li>
+  </ul>
+
+  <h3>Strategic Services</h3>
+  <ul>
+    <li><a href="specialties/digital-marketing.html">Digital Marketing<div class="details">More customers through smart online presence.</div></a></li>
+    <li><a href="specialties/sustainable-design.html">Sustainable Design<div class="details">Eco-friendly design without compromise.</div></a></li>
+  </ul>
+</section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/mannvvol" method="POST" id="contact-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" required placeholder="Tell us about your project..."></textarea>
+
+            <button type="submit">Send</button>
+
+            <div id="form-status" class="status" aria-live="polite"></div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>From Concept to Creation, Forged in Innovation</p>
+    <p>Always Ovia Studio Lab.</p>
+    <p>© All Rights Reserved.</p>
+</footer>
+
+<script>
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        statusEl.textContent = '';
+        statusEl.className = 'status';
+
+        const data = new FormData(form);
+        try {
+            const res = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+            if (res.ok) {
+                statusEl.textContent = 'Thank you for reaching out! We may get back to you soon.';
+                statusEl.className = 'status success';
+                form.reset();
+            } else {
+                throw new Error();
+            }
+        } catch {
+            statusEl.textContent = 'There was a problem submitting your form. Please try again.';
+            statusEl.className = 'status error';
+        }
+    });
+</script>
+
+</body>
+</html>
